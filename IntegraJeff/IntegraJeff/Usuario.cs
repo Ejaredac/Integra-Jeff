@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntegraJeff
 {
-    class Usuario
+    public class Usuario
     {
         
         private string _strNombreUsuario;

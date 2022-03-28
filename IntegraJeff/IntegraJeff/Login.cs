@@ -76,7 +76,7 @@ namespace IntegraJeff
                 //Ejecutar lector
                 MySqlDataReader lector = mscCommand.ExecuteReader();
 
-
+                
                 //El lector leyo
                 if (lector.Read())
                 {
@@ -90,7 +90,14 @@ namespace IntegraJeff
                     usuario.NombreUsuario = lector.GetString(lector.GetOrdinal("username"));
                     usuario.IdUsuario = lector.GetInt32(lector.GetOrdinal("idusers"));
                     MessageBox.Show("Este usuario si existe " + (usuario.Confirmado ? "Y esta confirmado" : "Pero no esta confirmado"));
-
+                    
+                    Pantalla_Principal pnpPantalla = new Pantalla_Principal(usuario);
+                    pnpPantalla.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show("Algun dato es incorrecto.");
                 }
 
 
@@ -108,6 +115,7 @@ namespace IntegraJeff
         private void Login_Load(object sender, EventArgs e)
         {
             ConexionBD.Configurar("integrajeffschm", "admin", "admin");
+            txtContrasenna.UseSystemPasswordChar = true;
         }
     }
 }
