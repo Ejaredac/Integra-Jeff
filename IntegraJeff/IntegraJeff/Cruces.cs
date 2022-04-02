@@ -22,6 +22,9 @@ namespace IntegraJeff
 
         #region Tipo de Servicio
         private string _strTipoServicio;
+        /// <summary>
+        /// Es el tipo de servicio que se va a usar.
+        /// </summary>
         public string TipoServicio
         {
             get { return _strTipoServicio; }
@@ -31,6 +34,9 @@ namespace IntegraJeff
 
         #region ID-Clientes
         private int _intIdClientes;
+        /// <summary>
+        /// ID-de los clientes
+        /// </summary>
         public int IdClientes
         {
             get { return _intIdClientes; }
@@ -123,6 +129,14 @@ namespace IntegraJeff
         {
             get { return _strDemora; }
             set { _strDemora = value; }
+        }
+
+        private int _intHorasDemora;
+
+        public int HorasDemora
+        {
+            get { return _intHorasDemora; }
+            set { _intHorasDemora = value; }
         }
 
         private int _intIdUnidades;
