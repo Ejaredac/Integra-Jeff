@@ -101,23 +101,23 @@
   <ItemGroup>
     <Compile Include="ConexionBD.cs" />
     <Compile Include="Cruces.cs" />
-    <Compile Include="CrucesForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CrucesForm.Designer.cs">
-      <DependentUpon>CrucesForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCruces.cs">
+    <Compile Include="FrmCajas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCruces.Designer.cs">
-      <DependentUpon>FrmCruces.cs</DependentUpon>
+    <Compile Include="FrmCajas.Designer.cs">
+      <DependentUpon>FrmCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrucescs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrucescs.Designer.cs">
+      <DependentUpon>FrmCrucescs.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUsuarioAdmin.cs">
       <SubType>Form</SubType>
@@ -153,8 +153,14 @@
     </Compile>
     <Compile Include="Usuario.cs" />
     <Content Include="Resources\JeffVector.ico" />
-    <EmbeddedResource Include="CrucesForm.resx">
-      <DependentUpon>CrucesForm.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCrucescs.resx">
+      <DependentUpon>FrmCrucescs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUsuarioAdmin.resx">
+      <DependentUpon>FrmUsuarioAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrnUsuarioEmpleado.resx">
+      <DependentUpon>FrnUsuarioEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -165,6 +171,7 @@
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="Properties\DataSources\Cruces.datasource" />
     <None Include="Resources\JeffVector.png" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

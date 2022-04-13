@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 namespace IntegraJeff
 {
     public class Usuario
@@ -87,5 +88,44 @@ namespace IntegraJeff
             set { _strRol = value; }
         }
 
+        public static Usuario ObtenerUsuario(int id)
+        {
+
+            Usuario usrUsuario = new Usuario();
+            MySqlConnection conn = ConexionBD.Conexion;
+            try
+            {
+                
+                string strQuery = $"select * from users where idusers={id};";
+
+                MySqlCommand mscCommand = new MySqlCommand(strQuery, conn);
+                conn.Open();
+                MySqlDataReader msdrLector = mscCommand.ExecuteReader();
+                if (msdrLector.HasRows)
+                {
+                    if (msdrLector.Read())
+                    {
+                        usrUsuario.Confirmado = msdrLector.GetBoolean("confirmado");
+                        usrUsuario.Contrasenna = msdrLector.GetString("password");
+                        usrUsuario.Email = msdrLector.GetString("email");
+                        usrUsuario.FechaCreacion = msdrLector.GetDateTime("create_time");
+                        usrUsuario.IdUsuario = msdrLector.GetInt32("idusers");
+                        usrUsuario.NombreUsuario = msdrLector.GetString("username");
+                        usrUsuario.Rol = msdrLector.GetString("rol");
+                    }
+                }
+                
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return usrUsuario;
+        }
     }
 }

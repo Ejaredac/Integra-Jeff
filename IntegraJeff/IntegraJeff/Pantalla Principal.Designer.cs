@@ -65,7 +65,6 @@ namespace IntegraJeff
             this.pnlPanelNavegacion.Location = new System.Drawing.Point(0, 0);
             this.pnlPanelNavegacion.Margin = new System.Windows.Forms.Padding(10);
             this.pnlPanelNavegacion.Name = "pnlPanelNavegacion";
-            this.pnlPanelNavegacion.Padding = new System.Windows.Forms.Padding(5);
             this.pnlPanelNavegacion.Size = new System.Drawing.Size(199, 761);
             this.pnlPanelNavegacion.TabIndex = 0;
             // 
@@ -79,10 +78,10 @@ namespace IntegraJeff
             this.materialButton3.ForeColor = System.Drawing.SystemColors.Control;
             this.materialButton3.IconChar = FontAwesome.Sharp.MaterialIcons.Layers;
             this.materialButton3.IconColor = System.Drawing.Color.White;
-            this.materialButton3.Location = new System.Drawing.Point(5, 453);
+            this.materialButton3.Location = new System.Drawing.Point(0, 448);
             this.materialButton3.Name = "materialButton3";
             this.materialButton3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton3.Size = new System.Drawing.Size(189, 46);
+            this.materialButton3.Size = new System.Drawing.Size(199, 46);
             this.materialButton3.TabIndex = 9;
             this.materialButton3.Text = "Intermediarios";
             this.materialButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -97,10 +96,10 @@ namespace IntegraJeff
             this.materialButton4.ForeColor = System.Drawing.SystemColors.Control;
             this.materialButton4.IconChar = FontAwesome.Sharp.MaterialIcons.Fan;
             this.materialButton4.IconColor = System.Drawing.Color.White;
-            this.materialButton4.Location = new System.Drawing.Point(5, 407);
+            this.materialButton4.Location = new System.Drawing.Point(0, 402);
             this.materialButton4.Name = "materialButton4";
             this.materialButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton4.Size = new System.Drawing.Size(189, 46);
+            this.materialButton4.Size = new System.Drawing.Size(199, 46);
             this.materialButton4.TabIndex = 8;
             this.materialButton4.Text = "Unidades";
             this.materialButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -115,10 +114,10 @@ namespace IntegraJeff
             this.materialButton2.ForeColor = System.Drawing.SystemColors.Control;
             this.materialButton2.IconChar = FontAwesome.Sharp.MaterialIcons.DivingScubaTank;
             this.materialButton2.IconColor = System.Drawing.Color.White;
-            this.materialButton2.Location = new System.Drawing.Point(5, 361);
+            this.materialButton2.Location = new System.Drawing.Point(0, 356);
             this.materialButton2.Name = "materialButton2";
             this.materialButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton2.Size = new System.Drawing.Size(189, 46);
+            this.materialButton2.Size = new System.Drawing.Size(199, 46);
             this.materialButton2.TabIndex = 6;
             this.materialButton2.Text = "Mantenimientos";
             this.materialButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -133,10 +132,10 @@ namespace IntegraJeff
             this.materialButton1.ForeColor = System.Drawing.SystemColors.Control;
             this.materialButton1.IconChar = FontAwesome.Sharp.MaterialIcons.CameraAccount;
             this.materialButton1.IconColor = System.Drawing.Color.White;
-            this.materialButton1.Location = new System.Drawing.Point(5, 315);
+            this.materialButton1.Location = new System.Drawing.Point(0, 310);
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton1.Size = new System.Drawing.Size(189, 46);
+            this.materialButton1.Size = new System.Drawing.Size(199, 46);
             this.materialButton1.TabIndex = 5;
             this.materialButton1.Text = "Conductores";
             this.materialButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -151,10 +150,10 @@ namespace IntegraJeff
             this.btnClientes.ForeColor = System.Drawing.SystemColors.Control;
             this.btnClientes.IconChar = FontAwesome.Sharp.MaterialIcons.BriefcaseOutline;
             this.btnClientes.IconColor = System.Drawing.Color.White;
-            this.btnClientes.Location = new System.Drawing.Point(5, 269);
+            this.btnClientes.Location = new System.Drawing.Point(0, 264);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnClientes.Size = new System.Drawing.Size(189, 46);
+            this.btnClientes.Size = new System.Drawing.Size(199, 46);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -169,14 +168,15 @@ namespace IntegraJeff
             this.btnCajas.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCajas.IconChar = FontAwesome.Sharp.MaterialIcons.CubeSend;
             this.btnCajas.IconColor = System.Drawing.Color.White;
-            this.btnCajas.Location = new System.Drawing.Point(5, 223);
+            this.btnCajas.Location = new System.Drawing.Point(0, 218);
             this.btnCajas.Name = "btnCajas";
             this.btnCajas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCajas.Size = new System.Drawing.Size(189, 46);
+            this.btnCajas.Size = new System.Drawing.Size(199, 46);
             this.btnCajas.TabIndex = 3;
             this.btnCajas.Text = "Cajas";
             this.btnCajas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCajas.UseVisualStyleBackColor = true;
+            this.btnCajas.Click += new System.EventHandler(this.btnCajas_Click);
             // 
             // btnFacturas
             // 
@@ -187,10 +187,10 @@ namespace IntegraJeff
             this.btnFacturas.ForeColor = System.Drawing.SystemColors.Control;
             this.btnFacturas.IconChar = FontAwesome.Sharp.MaterialIcons.File;
             this.btnFacturas.IconColor = System.Drawing.Color.White;
-            this.btnFacturas.Location = new System.Drawing.Point(5, 177);
+            this.btnFacturas.Location = new System.Drawing.Point(0, 172);
             this.btnFacturas.Name = "btnFacturas";
             this.btnFacturas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnFacturas.Size = new System.Drawing.Size(189, 46);
+            this.btnFacturas.Size = new System.Drawing.Size(199, 46);
             this.btnFacturas.TabIndex = 2;
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -205,24 +205,25 @@ namespace IntegraJeff
             this.btnCruces.ForeColor = System.Drawing.SystemColors.Control;
             this.btnCruces.IconChar = FontAwesome.Sharp.MaterialIcons.Truck;
             this.btnCruces.IconColor = System.Drawing.Color.White;
-            this.btnCruces.Location = new System.Drawing.Point(5, 131);
+            this.btnCruces.Location = new System.Drawing.Point(0, 126);
             this.btnCruces.Name = "btnCruces";
             this.btnCruces.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCruces.Size = new System.Drawing.Size(189, 46);
+            this.btnCruces.Size = new System.Drawing.Size(199, 46);
             this.btnCruces.TabIndex = 1;
             this.btnCruces.Text = "Cruces";
             this.btnCruces.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCruces.UseVisualStyleBackColor = true;
+            this.btnCruces.Click += new System.EventHandler(this.btnCruces_Click);
             // 
             // pnlUsuarioEspacio
             // 
             this.pnlUsuarioEspacio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(4)))), ((int)(((byte)(19)))));
             this.pnlUsuarioEspacio.Controls.Add(this.pctUsuario);
             this.pnlUsuarioEspacio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlUsuarioEspacio.Location = new System.Drawing.Point(5, 5);
+            this.pnlUsuarioEspacio.Location = new System.Drawing.Point(0, 0);
             this.pnlUsuarioEspacio.Margin = new System.Windows.Forms.Padding(0);
             this.pnlUsuarioEspacio.Name = "pnlUsuarioEspacio";
-            this.pnlUsuarioEspacio.Size = new System.Drawing.Size(189, 126);
+            this.pnlUsuarioEspacio.Size = new System.Drawing.Size(199, 126);
             this.pnlUsuarioEspacio.TabIndex = 0;
             // 
             // pctUsuario
@@ -240,7 +241,7 @@ namespace IntegraJeff
             this.pctUsuario.Location = new System.Drawing.Point(0, 0);
             this.pctUsuario.Margin = new System.Windows.Forms.Padding(0);
             this.pctUsuario.Name = "pctUsuario";
-            this.pctUsuario.Size = new System.Drawing.Size(189, 126);
+            this.pctUsuario.Size = new System.Drawing.Size(199, 126);
             this.pctUsuario.TabIndex = 0;
             this.pctUsuario.Text = "Usuario";
             this.pctUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -255,7 +256,6 @@ namespace IntegraJeff
             this.pnlDatos.Location = new System.Drawing.Point(199, 0);
             this.pnlDatos.Margin = new System.Windows.Forms.Padding(5);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Padding = new System.Windows.Forms.Padding(10);
             this.pnlDatos.Size = new System.Drawing.Size(1135, 761);
             this.pnlDatos.TabIndex = 1;
             // 

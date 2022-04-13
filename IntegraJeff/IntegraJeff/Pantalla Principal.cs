@@ -41,6 +41,7 @@ namespace IntegraJeff
         {
             InitializeComponent();
             ActUsuario = user;
+            
         }
         
         private void Pantalla_Principal_Load(object sender, EventArgs e)
@@ -59,11 +60,11 @@ namespace IntegraJeff
         {
             if (ActUsuario.Rol.Equals("Empleado"))
             {
-                
+                openChildForm(new FrnUsuarioEmpleado(ActUsuario));
             }
             if (ActUsuario.Rol.Equals("Administrador"))
             {
-                
+                openChildForm(new FrmUsuarioAdmin(ActUsuario));
             }
         }
 
@@ -80,7 +81,21 @@ namespace IntegraJeff
             pnlDatos.Controls.Add(childform);
             pnlDatos.Tag = childform;
             childform.BringToFront();
-            childform.Show();
+            if (!childform.Visible)
+            {
+                childform.Show();
+            }
+            
+        }
+
+        private void btnCruces_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCajas_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

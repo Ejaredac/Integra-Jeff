@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IntegraJeff
 {
-    public partial class FrmCruces : Form
+    public partial class FrmCrucescs : Form
     {
-        public FrmCruces()
+        public FrmCrucescs()
         {
             InitializeComponent();
         }
