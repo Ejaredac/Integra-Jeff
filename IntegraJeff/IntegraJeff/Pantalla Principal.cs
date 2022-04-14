@@ -95,7 +95,12 @@ namespace IntegraJeff
 
         private void btnCajas_Click(object sender, EventArgs e)
         {
+            openChildForm(new FrmCajas());
+        }
 
+        private void btnClientes_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmClientes());
         }
     }
 }

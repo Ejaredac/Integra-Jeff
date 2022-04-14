@@ -36,6 +36,14 @@ C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.Pantalla_Principal.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\bin\Debug\FontAwesome.Sharp.dll
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\bin\Debug\FontAwesome.Sharp.Material.dll
-C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.CrucesForm.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmUsuarioAdmin.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrnUsuarioEmpleado.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajas.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCrucescs.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajasBuscar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajaAgregar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajaEditar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmClientes.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmClientesAgregar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmClientesBuscar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmClientesEditar.resources

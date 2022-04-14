@@ -99,19 +99,65 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Caja.cs" />
+    <Compile Include="Clientes.cs" />
+    <Compile Include="Conductor.cs" />
     <Compile Include="ConexionBD.cs" />
     <Compile Include="Cruces.cs" />
+    <Compile Include="Factura.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmCajaAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCajaAgregar.Designer.cs">
+      <DependentUpon>FrmCajaAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCajaEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCajaEditar.Designer.cs">
+      <DependentUpon>FrmCajaEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCajas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCajas.Designer.cs">
       <DependentUpon>FrmCajas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCajasBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCajasBuscar.Designer.cs">
+      <DependentUpon>FrmCajasBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientes.Designer.cs">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientesAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientesAgregar.Designer.cs">
+      <DependentUpon>FrmClientesAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientesBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientesBuscar.Designer.cs">
+      <DependentUpon>FrmClientesBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClientesEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClientesEditar.Designer.cs">
+      <DependentUpon>FrmClientesEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmCrucescs.cs">
       <SubType>Form</SubType>
@@ -131,12 +177,14 @@
     <Compile Include="FrnUsuarioEmpleado.Designer.cs">
       <DependentUpon>FrnUsuarioEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Intermediarios.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimiento.cs" />
     <Compile Include="Pantalla Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,8 +199,33 @@
     <Compile Include="Registro.Designer.cs">
       <DependentUpon>Registro.cs</DependentUpon>
     </Compile>
+    <Compile Include="Unidades.cs" />
     <Compile Include="Usuario.cs" />
     <Content Include="Resources\JeffVector.ico" />
+    <EmbeddedResource Include="FrmCajaAgregar.resx">
+      <DependentUpon>FrmCajaAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCajaEditar.resx">
+      <DependentUpon>FrmCajaEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCajas.resx">
+      <DependentUpon>FrmCajas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCajasBuscar.resx">
+      <DependentUpon>FrmCajasBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientes.resx">
+      <DependentUpon>FrmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientesAgregar.resx">
+      <DependentUpon>FrmClientesAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientesBuscar.resx">
+      <DependentUpon>FrmClientesBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClientesEditar.resx">
+      <DependentUpon>FrmClientesEditar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCrucescs.resx">
       <DependentUpon>FrmCrucescs.cs</DependentUpon>
     </EmbeddedResource>
