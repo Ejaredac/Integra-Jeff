@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntegraJeff
 {
-    class Intermediario
+    public class Intermediario
     {
         #region ID-Intermediario
         private int _intIDIntermediario;

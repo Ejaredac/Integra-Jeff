@@ -102,5 +102,25 @@ namespace IntegraJeff
         {
             openChildForm(new FrmClientes());
         }
+
+        private void materialButton1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmConductor());
+        }
+
+        private void materialButton3_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmIntermediario());
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmUnidades());
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmMantenimientos());
+        }
     }
 }

@@ -159,11 +159,131 @@
     <Compile Include="FrmClientesEditar.Designer.cs">
       <DependentUpon>FrmClientesEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmConductor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConductor.Designer.cs">
+      <DependentUpon>FrmConductor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConductorAgregarcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConductorAgregarcs.Designer.cs">
+      <DependentUpon>FrmConductorAgregarcs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConductorBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConductorBuscar.Designer.cs">
+      <DependentUpon>FrmConductorBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmConductorEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmConductorEditar.Designer.cs">
+      <DependentUpon>FrmConductorEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmCrucescs.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmCrucescs.Designer.cs">
       <DependentUpon>FrmCrucescs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFactura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFactura.Designer.cs">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFacturaAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFacturaAgregar.Designer.cs">
+      <DependentUpon>FrmFacturaAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFacturaBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFacturaBuscar.Designer.cs">
+      <DependentUpon>FrmFacturaBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmFacturaEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmFacturaEditar.Designer.cs">
+      <DependentUpon>FrmFacturaEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIntermediario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIntermediario.Designer.cs">
+      <DependentUpon>FrmIntermediario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIntermediarioAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIntermediarioAgregar.Designer.cs">
+      <DependentUpon>FrmIntermediarioAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIntermediarioBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIntermediarioBuscar.Designer.cs">
+      <DependentUpon>FrmIntermediarioBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIntermediarioEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIntermediarioEditar.Designer.cs">
+      <DependentUpon>FrmIntermediarioEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientos.Designer.cs">
+      <DependentUpon>FrmMantenimientos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientosAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientosAgregar.Designer.cs">
+      <DependentUpon>FrmMantenimientosAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientosBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientosBuscar.Designer.cs">
+      <DependentUpon>FrmMantenimientosBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMantenimientosEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMantenimientosEditar.Designer.cs">
+      <DependentUpon>FrmMantenimientosEditar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnidades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnidades.Designer.cs">
+      <DependentUpon>FrmUnidades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnidadesAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnidadesAgregar.Designer.cs">
+      <DependentUpon>FrmUnidadesAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnidadesBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnidadesBuscar.Designer.cs">
+      <DependentUpon>FrmUnidadesBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUnidadesEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUnidadesEditar.Designer.cs">
+      <DependentUpon>FrmUnidadesEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmUsuarioAdmin.cs">
       <SubType>Form</SubType>
@@ -226,8 +346,56 @@
     <EmbeddedResource Include="FrmClientesEditar.resx">
       <DependentUpon>FrmClientesEditar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmConductor.resx">
+      <DependentUpon>FrmConductor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConductorAgregarcs.resx">
+      <DependentUpon>FrmConductorAgregarcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConductorBuscar.resx">
+      <DependentUpon>FrmConductorBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmConductorEditar.resx">
+      <DependentUpon>FrmConductorEditar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmCrucescs.resx">
       <DependentUpon>FrmCrucescs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIntermediario.resx">
+      <DependentUpon>FrmIntermediario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIntermediarioAgregar.resx">
+      <DependentUpon>FrmIntermediarioAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIntermediarioBuscar.resx">
+      <DependentUpon>FrmIntermediarioBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIntermediarioEditar.resx">
+      <DependentUpon>FrmIntermediarioEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientos.resx">
+      <DependentUpon>FrmMantenimientos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientosAgregar.resx">
+      <DependentUpon>FrmMantenimientosAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientosBuscar.resx">
+      <DependentUpon>FrmMantenimientosBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMantenimientosEditar.resx">
+      <DependentUpon>FrmMantenimientosEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnidades.resx">
+      <DependentUpon>FrmUnidades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnidadesAgregar.resx">
+      <DependentUpon>FrmUnidadesAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnidadesBuscar.resx">
+      <DependentUpon>FrmUnidadesBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUnidadesEditar.resx">
+      <DependentUpon>FrmUnidadesEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmUsuarioAdmin.resx">
       <DependentUpon>FrmUsuarioAdmin.cs</DependentUpon>

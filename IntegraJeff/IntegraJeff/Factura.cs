@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntegraJeff
 {
-    class Factura
+    public class Factura
     {
         #region Id - Remisiones y Facturas
         private int _intIdRemisionesFactura;

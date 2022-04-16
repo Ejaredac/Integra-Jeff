@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntegraJeff
 {
-    class Conductor
+    public class Conductor
     {
         #region ID-Conductor
         private int _intIDConductor;

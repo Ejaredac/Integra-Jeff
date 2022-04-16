@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntegraJeff
 {
-    class Mantenimiento
+    public class Mantenimiento
     {
         #region Id-Mantenimiento
         private int _intIDMantenimiento;

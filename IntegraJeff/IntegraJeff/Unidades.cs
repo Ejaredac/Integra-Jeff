@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace IntegraJeff
 {
-    class Unidad
+    public class Unidad
     {
         #region Id-Unidad
         private int _intIdUnidad;

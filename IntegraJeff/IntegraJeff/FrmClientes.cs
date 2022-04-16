@@ -255,5 +255,10 @@ namespace IntegraJeff
                 conn.Close();
             }
         }
+
+        private void pnlControlesTabla_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

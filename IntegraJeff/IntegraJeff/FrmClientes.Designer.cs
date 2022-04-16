@@ -209,6 +209,7 @@ namespace IntegraJeff
             this.pnlControlesTabla.Name = "pnlControlesTabla";
             this.pnlControlesTabla.Size = new System.Drawing.Size(276, 405);
             this.pnlControlesTabla.TabIndex = 0;
+            this.pnlControlesTabla.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlControlesTabla_Paint);
             // 
             // btnEliminar
             // 

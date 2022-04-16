@@ -86,6 +86,7 @@ namespace IntegraJeff
             this.materialButton3.Text = "Intermediarios";
             this.materialButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.materialButton3.UseVisualStyleBackColor = true;
+            this.materialButton3.Click += new System.EventHandler(this.materialButton3_Click);
             // 
             // materialButton4
             // 
@@ -104,6 +105,7 @@ namespace IntegraJeff
             this.materialButton4.Text = "Unidades";
             this.materialButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.materialButton4.UseVisualStyleBackColor = true;
+            this.materialButton4.Click += new System.EventHandler(this.materialButton4_Click);
             // 
             // materialButton2
             // 
@@ -122,6 +124,7 @@ namespace IntegraJeff
             this.materialButton2.Text = "Mantenimientos";
             this.materialButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click);
             // 
             // materialButton1
             // 
@@ -140,6 +143,7 @@ namespace IntegraJeff
             this.materialButton1.Text = "Conductores";
             this.materialButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.materialButton1.UseVisualStyleBackColor = true;
+            this.materialButton1.Click += new System.EventHandler(this.materialButton1_Click);
             // 
             // btnClientes
             // 
