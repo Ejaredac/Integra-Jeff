@@ -361,6 +361,18 @@
     <EmbeddedResource Include="FrmCrucescs.resx">
       <DependentUpon>FrmCrucescs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FrmFactura.resx">
+      <DependentUpon>FrmFactura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturaAgregar.resx">
+      <DependentUpon>FrmFacturaAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturaBuscar.resx">
+      <DependentUpon>FrmFacturaBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmFacturaEditar.resx">
+      <DependentUpon>FrmFacturaEditar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmIntermediario.resx">
       <DependentUpon>FrmIntermediario.cs</DependentUpon>
     </EmbeddedResource>

@@ -122,5 +122,10 @@ namespace IntegraJeff
         {
             openChildForm(new FrmMantenimientos());
         }
+
+        private void btnFacturas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmFactura());
+        }
     }
 }

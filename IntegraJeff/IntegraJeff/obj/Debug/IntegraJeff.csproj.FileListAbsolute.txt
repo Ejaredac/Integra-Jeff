@@ -63,3 +63,7 @@ C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmUnidadesAgregar.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmUnidadesBuscar.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmUnidadesEditar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmFactura.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmFacturaAgregar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmFacturaBuscar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmFacturaEditar.resources

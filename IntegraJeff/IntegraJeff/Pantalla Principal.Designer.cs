@@ -200,6 +200,7 @@ namespace IntegraJeff
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFacturas.UseVisualStyleBackColor = true;
+            this.btnFacturas.Click += new System.EventHandler(this.btnFacturas_Click);
             // 
             // btnCruces
             // 
