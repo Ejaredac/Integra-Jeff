@@ -183,11 +183,29 @@
     <Compile Include="FrmConductorEditar.Designer.cs">
       <DependentUpon>FrmConductorEditar.cs</DependentUpon>
     </Compile>
-    <Compile Include="FrmCrucescs.cs">
+    <Compile Include="FrmCruce.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCrucescs.Designer.cs">
-      <DependentUpon>FrmCrucescs.cs</DependentUpon>
+    <Compile Include="FrmCruce.Designer.cs">
+      <DependentUpon>FrmCruce.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCruceAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCruceAgregar.Designer.cs">
+      <DependentUpon>FrmCruceAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCruceBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCruceBuscar.Designer.cs">
+      <DependentUpon>FrmCruceBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCruceEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCruceEditar.Designer.cs">
+      <DependentUpon>FrmCruceEditar.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmFactura.cs">
       <SubType>Form</SubType>
@@ -358,8 +376,17 @@
     <EmbeddedResource Include="FrmConductorEditar.resx">
       <DependentUpon>FrmConductorEditar.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FrmCrucescs.resx">
-      <DependentUpon>FrmCrucescs.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCruce.resx">
+      <DependentUpon>FrmCruce.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCruceAgregar.resx">
+      <DependentUpon>FrmCruceAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCruceBuscar.resx">
+      <DependentUpon>FrmCruceBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCruceEditar.resx">
+      <DependentUpon>FrmCruceEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFactura.resx">
       <DependentUpon>FrmFactura.cs</DependentUpon>

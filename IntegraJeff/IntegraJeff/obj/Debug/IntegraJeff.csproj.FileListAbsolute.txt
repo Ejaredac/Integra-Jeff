@@ -39,7 +39,6 @@ C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmUsuarioAdmin.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrnUsuarioEmpleado.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajas.resources
-C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCrucescs.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajasBuscar.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajaAgregar.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCajaEditar.resources
@@ -67,3 +66,7 @@ C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmFacturaAgregar.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmFacturaBuscar.resources
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmFacturaEditar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCruce.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCruceAgregar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCruceBuscar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmCruceEditar.resources

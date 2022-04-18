@@ -90,7 +90,7 @@ namespace IntegraJeff
 
         private void btnCruces_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new FrmCruce());
         }
 
         private void btnCajas_Click(object sender, EventArgs e)
