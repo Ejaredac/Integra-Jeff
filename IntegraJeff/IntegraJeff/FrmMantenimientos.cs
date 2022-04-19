@@ -13,7 +13,7 @@ namespace IntegraJeff
 {
     public partial class FrmMantenimientos : Form
     {
-        int intCantidadDeRegistros = 5;
+        int intCantidadDeRegistros = 50;
         int varPagIndice = 0;
         string[] matrVars = new string[6];
         DateTime[] matrdats = new DateTime[2];
@@ -30,6 +30,8 @@ namespace IntegraJeff
         {
             InitializeComponent();
             MantenimientoActual = new Mantenimiento();
+            MantenimientoActual.FechaPago = DateTime.Parse("2020-01-01");
+            MantenimientoActual.FechaReparacion = DateTime.Parse("2020-01-01");
         }
         public FrmMantenimientos(Mantenimiento enviado)
         {

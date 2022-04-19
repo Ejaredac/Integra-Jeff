@@ -13,7 +13,7 @@ namespace IntegraJeff
 {
     public partial class FrmCruce : Form
     {
-        int intCantidadDeRegistros = 5;
+        int intCantidadDeRegistros = 50;
         int varPagIndice = 0;
         string[] matrVars = new string[25];
         DateTime[] matrdats = new DateTime[2];
@@ -29,6 +29,8 @@ namespace IntegraJeff
         {
             InitializeComponent();
             CruceActual = new Cruces();
+            CruceActual.FechaCarga = DateTime.Parse("2020-01-01");
+            CruceActual.FechaEntrega = DateTime.Parse("2020-01-01");
         }
 
         public FrmCruce(Cruces enviado)

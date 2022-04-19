@@ -14,7 +14,7 @@ namespace IntegraJeff
 
     public partial class FrmClientes : Form
     {
-        int intCantidadDeRegistros = 5;
+        int intCantidadDeRegistros = 50;
         int varPagIndice = 0;
         string[] matrVars = new string[3];
         private Cliente _cltClienteActual;

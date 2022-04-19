@@ -13,7 +13,7 @@ namespace IntegraJeff
 {
     public partial class FrmFactura : Form
     {
-        int intCantidadDeRegistros = 5;
+        int intCantidadDeRegistros = 50;
         int varPagIndice = 0;
         string[] matrVars = new string[10];
         DateTime[] matrdats = new DateTime[3];
@@ -29,6 +29,9 @@ namespace IntegraJeff
         {
             InitializeComponent();
             FacturaActual = new Factura();
+            FacturaActual.FechaFactura = DateTime.Parse("2020-01-01");
+            FacturaActual.FechaPago = DateTime.Parse("2020-01-01");
+            FacturaActual.FechaVencimiento = DateTime.Parse("2020-01-01");
         }
         public FrmFactura(Factura enviado)
         {
