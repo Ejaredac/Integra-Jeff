@@ -37,9 +37,9 @@ namespace IntegraJeff
         {
             InitializeComponent();
             FacturaActual = enviado;
-            btnEliminar.Enabled = false;
-            btnAgregar.Enabled = false;
-            btnEditar.Enabled = false;
+            //btnEliminar.Enabled = false;
+            //btnAgregar.Enabled = false;
+            //btnEditar.Enabled = false;
         }
 
         private void FrmFactura_Load(object sender, EventArgs e)
@@ -117,27 +117,43 @@ namespace IntegraJeff
         private void btnRefresh_Click(object sender, EventArgs e)
         {
 
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void cboPagina_SelectionChangeCommitted(object sender, EventArgs e)
         {
 
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -149,15 +165,23 @@ namespace IntegraJeff
 
         private void chkBusqueda_CheckedChanged(object sender, EventArgs e)
         {
-            cboPagina.SelectedIndex = 0;
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                cboPagina.SelectedIndex = 0;
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -175,32 +199,39 @@ namespace IntegraJeff
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea eliminar este cliente?", "ELIMINAR", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (ConexionBD.UsuarioActual.Rol.Equals("Administrador"))
             {
-                MySqlConnection conn = ConexionBD.Conexion;
-                try
+                if (MessageBox.Show("¿Desea eliminar este cliente?", "ELIMINAR", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    string strOrder = "DELETE FROM `integrajeffschm`.`remisionesyfacturas` WHERE idRemisionesYFacturas = @id";
-                    MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
-                    mscCommand.Parameters.AddWithValue("@id", FacturaActual.IdRemisionesFactura);
-                    conn.Open();
-                    mscCommand.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
+                    MySqlConnection conn = ConexionBD.Conexion;
+                    try
+                    {
+                        string strOrder = "DELETE FROM `integrajeffschm`.`remisionesyfacturas` WHERE idRemisionesYFacturas = @id";
+                        MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
+                        mscCommand.Parameters.AddWithValue("@id", FacturaActual.IdRemisionesFactura);
+                        conn.Open();
+                        mscCommand.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
 
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    conn.Close();
-                }
-                FacturaActual.IdRemisionesFactura = 0;
-                foreach (Control txt in pnlFacturaSeleccionada.Controls)
-                {
-                    txt.Text = (txt is TextBox) ? "" : txt.Text;
-                }
-                
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                    FacturaActual.IdRemisionesFactura = 0;
+                    foreach (Control txt in pnlFacturaSeleccionada.Controls)
+                    {
+                        txt.Text = (txt is TextBox) ? "" : txt.Text;
+                    }
+
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Usted no puede eliminar porque no es administrador");
             }
         }
         void ActualizarPaginasNormal()

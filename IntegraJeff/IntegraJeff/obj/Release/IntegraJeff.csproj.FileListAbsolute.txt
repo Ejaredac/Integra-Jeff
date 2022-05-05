@@ -69,3 +69,5 @@ C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Release\IntegraJeff.csproj.CopyComplete
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Release\Central Jeff.exe
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Release\Central Jeff.pdb
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Release\IntegraJeff.csproj.AssemblyReference.cache
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Release\IntegraJeff.csproj.SuggestedBindingRedirects.cache

@@ -218,6 +218,8 @@ namespace IntegraJeff
             // 
             // txtTipoServicio
             // 
+            this.txtTipoServicio.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.txtTipoServicio.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
             this.txtTipoServicio.Location = new System.Drawing.Point(151, 63);
             this.txtTipoServicio.Name = "txtTipoServicio";
             this.txtTipoServicio.Size = new System.Drawing.Size(153, 20);
@@ -546,6 +548,7 @@ namespace IntegraJeff
             this.Controls.Add(this.lblIdCruces);
             this.Name = "FrmCruceAgregar";
             this.Text = "FrmCruceAgregar";
+            this.Load += new System.EventHandler(this.FrmCruceAgregar_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

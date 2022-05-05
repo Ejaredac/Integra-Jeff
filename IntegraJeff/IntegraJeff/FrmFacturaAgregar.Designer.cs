@@ -56,6 +56,7 @@ namespace IntegraJeff
             this.lblIdRemisionesyFacturas = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.btnSeleccionarCliente = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // dtpFechaFactura
@@ -299,12 +300,23 @@ namespace IntegraJeff
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
+            // btnSeleccionarCliente
+            // 
+            this.btnSeleccionarCliente.Location = new System.Drawing.Point(262, 62);
+            this.btnSeleccionarCliente.Name = "btnSeleccionarCliente";
+            this.btnSeleccionarCliente.Size = new System.Drawing.Size(32, 23);
+            this.btnSeleccionarCliente.TabIndex = 52;
+            this.btnSeleccionarCliente.Text = "...";
+            this.btnSeleccionarCliente.UseVisualStyleBackColor = true;
+            this.btnSeleccionarCliente.Click += new System.EventHandler(this.btnSeleccionarCliente_Click);
+            // 
             // FrmFacturaAgregar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(752, 395);
+            this.Controls.Add(this.btnSeleccionarCliente);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dtpFechaFactura);
@@ -368,5 +380,6 @@ namespace IntegraJeff
         private System.Windows.Forms.Label lblIdRemisionesyFacturas;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Button btnSeleccionarCliente;
     }
 }

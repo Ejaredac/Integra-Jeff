@@ -65,5 +65,13 @@ namespace IntegraJeff
             cnNuevaConexion.Close();
             _cnConexion = cnNuevaConexion;
         }
+        private static Usuario _usrUsuarioActual;
+
+        public static Usuario UsuarioActual
+        {
+            get { return _usrUsuarioActual; }
+            set { _usrUsuarioActual = value; }
+        }
+
     }
 }

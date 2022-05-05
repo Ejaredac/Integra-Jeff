@@ -90,7 +90,7 @@ namespace IntegraJeff
                     usuario.NombreUsuario = lector.GetString(lector.GetOrdinal("username"));
                     usuario.IdUsuario = lector.GetInt32(lector.GetOrdinal("idusers"));
                     MessageBox.Show("Este usuario si existe " + (usuario.Confirmado ? "Y esta confirmado" : "Pero no esta confirmado"));
-                    
+                    ConexionBD.UsuarioActual = usuario;
                     Pantalla_Principal pnpPantalla = new Pantalla_Principal(usuario);
                     pnpPantalla.Show();
                     this.Hide();

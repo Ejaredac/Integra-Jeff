@@ -202,5 +202,13 @@ VALUES
                 e.Handled = true;
             }
         }
+
+        private void btnSeleccionarCliente_Click(object sender, EventArgs e)
+        {
+            Cliente clie = new Cliente();
+            FrmClientes fcl = new FrmClientes(clie);
+            fcl.ShowDialog();
+            txtNombreCliente.Text = clie.Nombre;
+        }
     }
 }

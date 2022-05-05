@@ -243,40 +243,60 @@ namespace IntegraJeff
         private void btnRefresh_Click(object sender, EventArgs e)
         {
 
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
-            {
-                ActualizarPaginasNormal();
-            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void cboPagina_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void chkBusqueda_CheckedChanged(object sender, EventArgs e)
         {
-            cboPagina.SelectedIndex = 0;
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                cboPagina.SelectedIndex = 0;
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
 
@@ -300,32 +320,39 @@ namespace IntegraJeff
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea eliminar este cliente?", "ELIMINAR", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (ConexionBD.UsuarioActual.Rol.Equals("Administrador"))
             {
-                MySqlConnection conn = ConexionBD.Conexion;
-                try
+                if (MessageBox.Show("¿Desea eliminar este cliente?", "ELIMINAR", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    string strOrder = "DELETE FROM `integrajeffschm`.`cruces` WHERE idCruces = @id;";
-                    MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
-                    mscCommand.Parameters.AddWithValue("@id", CruceActual.IdCruces);
-                    conn.Open();
-                    mscCommand.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
+                    MySqlConnection conn = ConexionBD.Conexion;
+                    try
+                    {
+                        string strOrder = "DELETE FROM `integrajeffschm`.`cruces` WHERE idCruces = @id;";
+                        MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
+                        mscCommand.Parameters.AddWithValue("@id", CruceActual.IdCruces);
+                        conn.Open();
+                        mscCommand.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
 
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    conn.Close();
-                }
-                CruceActual.IdCruces = 0;
-                foreach (Control txt in pnlCruceSeleccionado.Controls)
-                {
-                    txt.Text = (txt is TextBox) ? "" : txt.Text;
-                }
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                    CruceActual.IdCruces = 0;
+                    foreach (Control txt in pnlCruceSeleccionado.Controls)
+                    {
+                        txt.Text = (txt is TextBox) ? "" : txt.Text;
+                    }
 
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Usted no puede eliminar porque no es administrador");
             }
         }
     }

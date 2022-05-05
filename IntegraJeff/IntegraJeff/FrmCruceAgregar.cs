@@ -181,5 +181,15 @@ VALUES
         {
             this.Close();
         }
+
+        private void FrmCruceAgregar_Load(object sender, EventArgs e)
+        {
+            txtTipoServicio.AutoCompleteCustomSource.Add("IMPORTACION");
+            txtTipoServicio.AutoCompleteCustomSource.Add("EXPORTACION");
+            txtTipoServicio.AutoCompleteCustomSource.Add("IMPORTACION VACIA");
+            txtTipoServicio.AutoCompleteCustomSource.Add("EXPORTACION VACIA");
+            txtTipoServicio.AutoCompleteCustomSource.Add("INTERCAMBIO");
+
+        }
     }
 }

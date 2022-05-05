@@ -129,6 +129,11 @@ namespace IntegraJeff
             txtReferencia.Text = CruceActual.Referencia;
             dtpFechaCarga.Value = CruceActual.FechaCarga;
             dtpFechaEntrega.Value = CruceActual.FechaEntrega;
+            txtTipoServicio.AutoCompleteCustomSource.Add("IMPORTACION");
+            txtTipoServicio.AutoCompleteCustomSource.Add("EXPORTACION");
+            txtTipoServicio.AutoCompleteCustomSource.Add("IMPORTACION VACIA");
+            txtTipoServicio.AutoCompleteCustomSource.Add("EXPORTACION VACIA");
+            txtTipoServicio.AutoCompleteCustomSource.Add("INTERCAMBIO");
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

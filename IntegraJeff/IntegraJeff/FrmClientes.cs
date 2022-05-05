@@ -34,21 +34,29 @@ namespace IntegraJeff
         {
             InitializeComponent();
             ClienteActual = enviado;
-            btnAgregar.Enabled = false;
-            btnEditar.Enabled = false;
-            btnEliminar.Enabled = false;
+            //btnAgregar.Enabled = false;
+            //btnEditar.Enabled = false;
+            //btnEliminar.Enabled = false;
         }
 
         private void cboPagina_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
         void ActualizarPaginasNormal()
@@ -139,28 +147,40 @@ namespace IntegraJeff
 
         private void chkBusqueda_CheckedChanged(object sender, EventArgs e)
         {
-            cboPagina.SelectedIndex = 0;
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                cboPagina.SelectedIndex = 0;
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
-            {
-                ActualizarPaginasNormal();
-            }
+            catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
 
         private void FrmClientes_Load(object sender, EventArgs e)
@@ -192,32 +212,39 @@ namespace IntegraJeff
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea eliminar este cliente?", "ELIMINAR", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (ConexionBD.UsuarioActual.Rol.Equals("Administrador"))
             {
-                MySqlConnection conn = ConexionBD.Conexion;
-                try
+                if (MessageBox.Show("¿Desea eliminar este cliente?", "ELIMINAR", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    string strOrder = "DELETE FROM `integrajeffschm`.`clientes` WHERE idClientes = @id;";
-                    MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
-                    mscCommand.Parameters.AddWithValue("@id", ClienteActual.IDCliente);
-                    conn.Open();
-                    mscCommand.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
+                    MySqlConnection conn = ConexionBD.Conexion;
+                    try
+                    {
+                        string strOrder = "DELETE FROM `integrajeffschm`.`clientes` WHERE idClientes = @id;";
+                        MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
+                        mscCommand.Parameters.AddWithValue("@id", ClienteActual.IDCliente);
+                        conn.Open();
+                        mscCommand.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
 
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    conn.Close();
-                }
-                ClienteActual.IDCliente = 0;
-                ClienteActual.Nombre = "";
-                ClienteActual.Direccion = "";
-                txtIdClientes.Text = ClienteActual.IDCliente.ToString();
-                txtNombre.Text = ClienteActual.Nombre = "";
-                txtDireccion.Text = ClienteActual.Direccion;
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                    ClienteActual.IDCliente = 0;
+                    ClienteActual.Nombre = "";
+                    ClienteActual.Direccion = "";
+                    txtIdClientes.Text = ClienteActual.IDCliente.ToString();
+                    txtNombre.Text = ClienteActual.Nombre = "";
+                    txtDireccion.Text = ClienteActual.Direccion;
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Usted no puede eliminar porque no es administrador");
             }
         }
 

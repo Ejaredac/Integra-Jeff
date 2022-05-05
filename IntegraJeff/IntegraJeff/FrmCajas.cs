@@ -33,33 +33,49 @@ namespace IntegraJeff
         {
             InitializeComponent();
             CajaActual = enviado;
-            btnAgregar.Enabled = false;
-            btnEditar.Enabled = false;
-            btnEliminar.Enabled = false;
+            //btnAgregar.Enabled = false;
+            //btnEditar.Enabled = false;
+            //btnEliminar.Enabled = false;
 
         }
         private void cboPagina_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+
+                MessageBox.Show(ex.Message);
             }
         }
         void ActualizarPaginasNormal()
@@ -164,15 +180,23 @@ namespace IntegraJeff
 
         private void chkBusqueda_CheckedChanged(object sender, EventArgs e)
         {
-            cboPagina.SelectedIndex = 0;
-            varPagIndice = cboPagina.SelectedIndex;
-            if (chkBusqueda.Checked)
+            try
             {
-                ActualizarPaginasBusqueda();
+                cboPagina.SelectedIndex = 0;
+                varPagIndice = cboPagina.SelectedIndex;
+                if (chkBusqueda.Checked)
+                {
+                    ActualizarPaginasBusqueda();
+                }
+                else
+                {
+                    ActualizarPaginasNormal();
+                }
             }
-            else
+            catch (Exception ex)
             {
-                ActualizarPaginasNormal();
+                MessageBox.Show(ex.Message);
+                throw;
             }
         }
 
@@ -239,30 +263,37 @@ namespace IntegraJeff
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("¿Desea eliminar esta caja?","ELIMINAR",MessageBoxButtons.YesNo)==DialogResult.Yes)
+            if (ConexionBD.UsuarioActual.Rol.Equals("Administrador"))
             {
-                MySqlConnection conn = ConexionBD.Conexion;
-                try
+                if (MessageBox.Show("¿Desea eliminar esta caja?", "ELIMINAR", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
-                    string strOrder = "DELETE FROM `integrajeffschm`.`cajas` WHERE idCajas = @id;";
-                    MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
-                    mscCommand.Parameters.AddWithValue("@id", CajaActual.IDCaja);
-                    conn.Open();
-                    mscCommand.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
+                    MySqlConnection conn = ConexionBD.Conexion;
+                    try
+                    {
+                        string strOrder = "DELETE FROM `integrajeffschm`.`cajas` WHERE idCajas = @id;";
+                        MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
+                        mscCommand.Parameters.AddWithValue("@id", CajaActual.IDCaja);
+                        conn.Open();
+                        mscCommand.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
 
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    conn.Close();
-                }
-                CajaActual.IDCaja = 0;
-                CajaActual.NumeroCaja = "";
-                txtNumeroCaja.Text = CajaActual.NumeroCaja;
-                txtIDcajas.Text = CajaActual.IDCaja.ToString(); 
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        conn.Close();
+                    }
+                    CajaActual.IDCaja = 0;
+                    CajaActual.NumeroCaja = "";
+                    txtNumeroCaja.Text = CajaActual.NumeroCaja;
+                    txtIDcajas.Text = CajaActual.IDCaja.ToString();
+                } 
+            }
+            else
+            {
+                MessageBox.Show("Usted no puede eliminar porque no es administrador");
             }
         }
     }

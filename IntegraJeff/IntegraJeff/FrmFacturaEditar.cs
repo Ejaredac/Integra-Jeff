@@ -215,5 +215,13 @@ WHERE `idRemisionesYFacturas` = @id;";
         {
             txtTotalPesos.Text = (string.IsNullOrEmpty(txtTotalPesos.Text)) ? "0" : txtTotalPesos.Text;
         }
+
+        private void btnSeleccionarCliente_Click(object sender, EventArgs e)
+        {
+            Cliente clie = new Cliente();
+            FrmClientes fcl = new FrmClientes(clie);
+            fcl.ShowDialog();
+            txtNombreCliente.Text = clie.Nombre;
+        }
     }
 }
