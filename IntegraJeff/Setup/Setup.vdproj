@@ -22,7 +22,7 @@
         "Entry"
         {
         "MsmKey" = "8:_06F6D9D1DAF12F07111CA25BA08463A7"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -34,7 +34,7 @@
         "Entry"
         {
         "MsmKey" = "8:_11548B0A3B3FE1D11B8C9E2D98C3F059"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -58,19 +58,19 @@
         "Entry"
         {
         "MsmKey" = "8:_3B3AF3A67E03B4E5FD4583D3565D9EFB"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_4AB0C71101B50451CC232FDC0ED586CC"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_51316696258991F8428B2A97513833A2"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -82,7 +82,7 @@
         "Entry"
         {
         "MsmKey" = "8:_55A9C5D0D04A4749D0EA428AAADC57D1"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -94,7 +94,7 @@
         "Entry"
         {
         "MsmKey" = "8:_6748624B4AB22935F60BFA6C30F9C3B7"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -106,7 +106,7 @@
         "Entry"
         {
         "MsmKey" = "8:_70BBEE2C7BCE083BA9D317F8C527075A"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -118,7 +118,7 @@
         "Entry"
         {
         "MsmKey" = "8:_A155290C64C9FC24319FC768C192A593"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -148,7 +148,7 @@
         "Entry"
         {
         "MsmKey" = "8:_A4A2A6CC3436839BBAA77BD6C432966F"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -165,6 +165,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D42D81B74C2BB541260F9A1899DDD00A"
         "OwnerKey" = "8:_A155290C64C9FC24319FC768C192A593"
         "MsmSig" = "8:_UNDEFINED"
@@ -172,7 +178,7 @@
         "Entry"
         {
         "MsmKey" = "8:_D42D81B74C2BB541260F9A1899DDD00A"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -184,7 +190,7 @@
         "Entry"
         {
         "MsmKey" = "8:_D4C060DE499B575EC287B9D280D0066E"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -196,31 +202,25 @@
         "Entry"
         {
         "MsmKey" = "8:_E6F7A9D9602BE3EBDC9AF6947A55C874"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_E8A4784674D3D6EA2FD1AE63C0F42B2E"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_E94EDACE95932CCAD1EA60A1BD9C7D52"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_E94EDACE95932CCAD1EA60A1BD9C7D52"
         "OwnerKey" = "8:_70BBEE2C7BCE083BA9D317F8C527075A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
-        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -232,7 +232,7 @@
         "Entry"
         {
         "MsmKey" = "8:_F7E54A4F3ABA0FDE5081D46592BDC25F"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -244,7 +244,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+        "OwnerKey" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -362,6 +362,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -996,15 +1004,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Central Jeff Integral"
-        "ProductCode" = "8:{8AACDC73-3408-4A64-8C56-44335C1AA4CB}"
-        "PackageCode" = "8:{5E3AA1FB-A632-40E8-A594-4480718A426B}"
+        "ProductCode" = "8:{EE3D8F75-3A27-4085-A850-869A37A8101F}"
+        "PackageCode" = "8:{7BAB1AF8-1E16-4BDF-A676-7E347C4C1311}"
         "UpgradeCode" = "8:{224E280C-E2B0-4DA8-939E-BB148A0C77D9}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.0.2"
         "Manufacturer" = "8:JeffTransports"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"
@@ -1117,43 +1125,43 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_5FE5FAC5E6B44BA38A91EA4149227FAA"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_162894544684444EB04ABC3A0AA381BD"
             {
-            "Name" = "8:Central Jeff Integral"
+            "Name" = "8:Central Integral Jeff"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
-            "Folder" = "8:_539748374F6246E69BE3D1857209FFBF"
-            "WorkingFolder" = "8:_867C626A4582412699C43618C5EBD9B9"
-            "Icon" = "8:_B99E447335BF42C9AB49D1888A0DD86D"
-            "Feature" = "8:"
-            }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_91281D65800D4461BDF6B39CB476487E"
-            {
-            "Name" = "8:Central Jeff Integral"
-            "Arguments" = "8:"
-            "Description" = "8:"
-            "ShowCmd" = "3:1"
-            "IconIndex" = "3:0"
-            "Transitive" = "11:FALSE"
-            "Target" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+            "Target" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
             "Folder" = "8:_39D2D395A0934434ABCB52A7512797C7"
             "WorkingFolder" = "8:_867C626A4582412699C43618C5EBD9B9"
             "Icon" = "8:_B99E447335BF42C9AB49D1888A0DD86D"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_CB591ACF201B4B8DA684152E38B0B308"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_1C1467FEA47F45F5BC3A61749D52EBD4"
             {
-            "Name" = "8:Central Jeff Integral"
+            "Name" = "8:Central Integral Jeff"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_F75A2DD850904D5D9B6FE5317CF76F10"
+            "Target" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
+            "Folder" = "8:_539748374F6246E69BE3D1857209FFBF"
+            "WorkingFolder" = "8:_867C626A4582412699C43618C5EBD9B9"
+            "Icon" = "8:_B99E447335BF42C9AB49D1888A0DD86D"
+            "Feature" = "8:"
+            }
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_F40D8F1822AC4087A6D87386DC44793C"
+            {
+            "Name" = "8:Central Integral Jeff"
+            "Arguments" = "8:"
+            "Description" = "8:"
+            "ShowCmd" = "3:1"
+            "IconIndex" = "3:0"
+            "Transitive" = "11:FALSE"
+            "Target" = "8:_C142430CFCD14DBD9EB438EC425D3D9A"
             "Folder" = "8:_867C626A4582412699C43618C5EBD9B9"
             "WorkingFolder" = "8:_867C626A4582412699C43618C5EBD9B9"
             "Icon" = "8:_B99E447335BF42C9AB49D1888A0DD86D"
@@ -1558,7 +1566,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_F75A2DD850904D5D9B6FE5317CF76F10"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_C142430CFCD14DBD9EB438EC425D3D9A"
             {
             "SourcePath" = "8:..\\IntegraJeff\\obj\\Release\\Central Jeff.exe"
             "TargetName" = "8:"

@@ -331,5 +331,26 @@ namespace IntegraJeff
                 conn.Close();
             }
         }
+
+        private void dtgFactura_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dtgFactura.Rows)
+            {
+
+                string fctPag = Convert.ToString(row.Cells[12].Value);
+                
+
+                if (fctPag.Equals("PAGADO"))
+                {
+                    row.DefaultCellStyle.BackColor = Color.FromArgb(131, 144, 250);
+                    row.DefaultCellStyle.ForeColor = Color.FromArgb(249, 233, 236);
+                }
+                else
+                {
+                    row.DefaultCellStyle.BackColor = Color.FromArgb(242, 242, 242);
+                    row.DefaultCellStyle.ForeColor = Color.Black;
+                }
+            }
+        }
     }
 }

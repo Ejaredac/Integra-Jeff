@@ -355,5 +355,26 @@ namespace IntegraJeff
                 MessageBox.Show("Usted no puede eliminar porque no es administrador");
             }
         }
+
+        private void dtgCruce_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dtgCruce.Rows)
+            {
+
+                string fctPag = Convert.ToString(row.Cells[8].Value);
+                string cruPag = Convert.ToString(row.Cells[9].Value);
+
+                if (fctPag.Equals("PAGADO") || cruPag.Equals("PAGADO"))
+                {
+                    row.DefaultCellStyle.BackColor = Color.FromArgb(131, 144, 250);
+                    row.DefaultCellStyle.ForeColor = Color.FromArgb(249, 233, 236);
+                }
+                else
+                {
+                    row.DefaultCellStyle.BackColor = Color.FromArgb(242, 242, 242);
+                    row.DefaultCellStyle.ForeColor = Color.Black;
+                }
+            }
+        }
     }
 }
