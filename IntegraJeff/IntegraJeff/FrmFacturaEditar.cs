@@ -45,6 +45,7 @@ namespace IntegraJeff
             dtpFechaFactura.Value = FacturaActual.FechaFactura;
             dtpFechaPago.Value = FacturaActual.FechaPago;
             dtpFechaVencimiento.Value = FacturaActual.FechaVencimiento;
+            chkEstatusCobro.Checked=FacturaActual.EstatusCobro;
         }
 
         private void btnEditar_Click(object sender, EventArgs e)

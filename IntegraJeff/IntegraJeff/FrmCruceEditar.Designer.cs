@@ -75,6 +75,12 @@ namespace IntegraJeff
             this.btnSeleccionarCaja = new System.Windows.Forms.Button();
             this.btnSeleccionarFactura = new System.Windows.Forms.Button();
             this.btnSeleccionarCliente = new System.Windows.Forms.Button();
+            this.txtNombreCliente = new System.Windows.Forms.TextBox();
+            this.txtNumeroCaja = new System.Windows.Forms.TextBox();
+            this.txtNumeroFactura = new System.Windows.Forms.TextBox();
+            this.txtNombreIntermediario = new System.Windows.Forms.TextBox();
+            this.txtNumeroUnidad = new System.Windows.Forms.TextBox();
+            this.txtNombreConductor = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtReferencia
@@ -95,7 +101,7 @@ namespace IntegraJeff
             // 
             this.txtIdConductores.Location = new System.Drawing.Point(988, 94);
             this.txtIdConductores.Name = "txtIdConductores";
-            this.txtIdConductores.Size = new System.Drawing.Size(133, 20);
+            this.txtIdConductores.Size = new System.Drawing.Size(38, 20);
             this.txtIdConductores.TabIndex = 27;
             this.txtIdConductores.Text = "0";
             this.txtIdConductores.TextChanged += new System.EventHandler(this.NotVacio);
@@ -105,7 +111,7 @@ namespace IntegraJeff
             // 
             this.txtIdUnidades.Location = new System.Drawing.Point(988, 63);
             this.txtIdUnidades.Name = "txtIdUnidades";
-            this.txtIdUnidades.Size = new System.Drawing.Size(133, 20);
+            this.txtIdUnidades.Size = new System.Drawing.Size(38, 20);
             this.txtIdUnidades.TabIndex = 28;
             this.txtIdUnidades.Text = "0";
             this.txtIdUnidades.TextChanged += new System.EventHandler(this.NotVacio);
@@ -132,7 +138,7 @@ namespace IntegraJeff
             // 
             this.txtIdIntermediarios.Location = new System.Drawing.Point(716, 97);
             this.txtIdIntermediarios.Name = "txtIdIntermediarios";
-            this.txtIdIntermediarios.Size = new System.Drawing.Size(153, 20);
+            this.txtIdIntermediarios.Size = new System.Drawing.Size(34, 20);
             this.txtIdIntermediarios.TabIndex = 31;
             this.txtIdIntermediarios.Text = "0";
             this.txtIdIntermediarios.TextChanged += new System.EventHandler(this.NotVacio);
@@ -190,7 +196,7 @@ namespace IntegraJeff
             // 
             this.txtIdRemisiones.Location = new System.Drawing.Point(135, 165);
             this.txtIdRemisiones.Name = "txtIdRemisiones";
-            this.txtIdRemisiones.Size = new System.Drawing.Size(153, 20);
+            this.txtIdRemisiones.Size = new System.Drawing.Size(43, 20);
             this.txtIdRemisiones.TabIndex = 38;
             this.txtIdRemisiones.Text = "0";
             this.txtIdRemisiones.TextChanged += new System.EventHandler(this.NotVacio);
@@ -200,7 +206,7 @@ namespace IntegraJeff
             // 
             this.txtIdCajas.Location = new System.Drawing.Point(135, 131);
             this.txtIdCajas.Name = "txtIdCajas";
-            this.txtIdCajas.Size = new System.Drawing.Size(153, 20);
+            this.txtIdCajas.Size = new System.Drawing.Size(43, 20);
             this.txtIdCajas.TabIndex = 25;
             this.txtIdCajas.Text = "0";
             this.txtIdCajas.TextChanged += new System.EventHandler(this.NotVacio);
@@ -210,7 +216,7 @@ namespace IntegraJeff
             // 
             this.txtIdClientes.Location = new System.Drawing.Point(135, 97);
             this.txtIdClientes.Name = "txtIdClientes";
-            this.txtIdClientes.Size = new System.Drawing.Size(153, 20);
+            this.txtIdClientes.Size = new System.Drawing.Size(43, 20);
             this.txtIdClientes.TabIndex = 30;
             this.txtIdClientes.Text = "0";
             this.txtIdClientes.TextChanged += new System.EventHandler(this.NotVacio);
@@ -288,7 +294,7 @@ namespace IntegraJeff
             // chkEstatusCobro
             // 
             this.chkEstatusCobro.AutoSize = true;
-            this.chkEstatusCobro.Location = new System.Drawing.Point(312, 31);
+            this.chkEstatusCobro.Location = new System.Drawing.Point(339, 31);
             this.chkEstatusCobro.Name = "chkEstatusCobro";
             this.chkEstatusCobro.Size = new System.Drawing.Size(107, 17);
             this.chkEstatusCobro.TabIndex = 16;
@@ -485,7 +491,7 @@ namespace IntegraJeff
             // 
             // btnSeleccionarCliente
             // 
-            this.btnSeleccionarCliente.Location = new System.Drawing.Point(294, 91);
+            this.btnSeleccionarCliente.Location = new System.Drawing.Point(294, 94);
             this.btnSeleccionarCliente.Name = "btnSeleccionarCliente";
             this.btnSeleccionarCliente.Size = new System.Drawing.Size(24, 24);
             this.btnSeleccionarCliente.TabIndex = 60;
@@ -493,11 +499,65 @@ namespace IntegraJeff
             this.btnSeleccionarCliente.UseVisualStyleBackColor = true;
             this.btnSeleccionarCliente.Click += new System.EventHandler(this.btnSeleccionarCliente_Click);
             // 
+            // txtNombreCliente
+            // 
+            this.txtNombreCliente.Enabled = false;
+            this.txtNombreCliente.Location = new System.Drawing.Point(184, 97);
+            this.txtNombreCliente.Name = "txtNombreCliente";
+            this.txtNombreCliente.Size = new System.Drawing.Size(100, 20);
+            this.txtNombreCliente.TabIndex = 61;
+            // 
+            // txtNumeroCaja
+            // 
+            this.txtNumeroCaja.Enabled = false;
+            this.txtNumeroCaja.Location = new System.Drawing.Point(184, 131);
+            this.txtNumeroCaja.Name = "txtNumeroCaja";
+            this.txtNumeroCaja.Size = new System.Drawing.Size(100, 20);
+            this.txtNumeroCaja.TabIndex = 62;
+            // 
+            // txtNumeroFactura
+            // 
+            this.txtNumeroFactura.Enabled = false;
+            this.txtNumeroFactura.Location = new System.Drawing.Point(184, 165);
+            this.txtNumeroFactura.Name = "txtNumeroFactura";
+            this.txtNumeroFactura.Size = new System.Drawing.Size(100, 20);
+            this.txtNumeroFactura.TabIndex = 63;
+            // 
+            // txtNombreIntermediario
+            // 
+            this.txtNombreIntermediario.Enabled = false;
+            this.txtNombreIntermediario.Location = new System.Drawing.Point(756, 97);
+            this.txtNombreIntermediario.Name = "txtNombreIntermediario";
+            this.txtNombreIntermediario.Size = new System.Drawing.Size(111, 20);
+            this.txtNombreIntermediario.TabIndex = 64;
+            // 
+            // txtNumeroUnidad
+            // 
+            this.txtNumeroUnidad.Enabled = false;
+            this.txtNumeroUnidad.Location = new System.Drawing.Point(1032, 63);
+            this.txtNumeroUnidad.Name = "txtNumeroUnidad";
+            this.txtNumeroUnidad.Size = new System.Drawing.Size(89, 20);
+            this.txtNumeroUnidad.TabIndex = 65;
+            // 
+            // txtNombreConductor
+            // 
+            this.txtNombreConductor.Enabled = false;
+            this.txtNombreConductor.Location = new System.Drawing.Point(1032, 94);
+            this.txtNombreConductor.Name = "txtNombreConductor";
+            this.txtNombreConductor.Size = new System.Drawing.Size(89, 20);
+            this.txtNombreConductor.TabIndex = 66;
+            // 
             // FrmCruceEditar
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(1174, 272);
+            this.Controls.Add(this.txtNombreConductor);
+            this.Controls.Add(this.txtNumeroUnidad);
+            this.Controls.Add(this.txtNombreIntermediario);
+            this.Controls.Add(this.txtNumeroFactura);
+            this.Controls.Add(this.txtNumeroCaja);
+            this.Controls.Add(this.txtNombreCliente);
             this.Controls.Add(this.btnSeleccionarCliente);
             this.Controls.Add(this.btnSeleccionarFactura);
             this.Controls.Add(this.btnSeleccionarCaja);
@@ -600,5 +660,11 @@ namespace IntegraJeff
         private System.Windows.Forms.Button btnSeleccionarCaja;
         private System.Windows.Forms.Button btnSeleccionarFactura;
         private System.Windows.Forms.Button btnSeleccionarCliente;
+        private System.Windows.Forms.TextBox txtNombreCliente;
+        private System.Windows.Forms.TextBox txtNumeroCaja;
+        private System.Windows.Forms.TextBox txtNumeroFactura;
+        private System.Windows.Forms.TextBox txtNombreIntermediario;
+        private System.Windows.Forms.TextBox txtNumeroUnidad;
+        private System.Windows.Forms.TextBox txtNombreConductor;
     }
 }

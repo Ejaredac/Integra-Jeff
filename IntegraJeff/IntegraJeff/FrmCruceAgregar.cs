@@ -53,6 +53,7 @@ namespace IntegraJeff
             FrmClientes fcl = new FrmClientes(cli);
             fcl.ShowDialog();
             txtIdClientes.Text = cli.IDCliente.ToString();
+            txtNombreCliente.Text = cli.Nombre;
         }
 
         private void btnSeleccionarCaja_Click(object sender, EventArgs e)
@@ -61,6 +62,7 @@ namespace IntegraJeff
             FrmCajas frcaja = new FrmCajas(caj);
             frcaja.ShowDialog();
             txtIdCajas.Text = caj.IDCaja.ToString();
+            txtNumeroCaja.Text = caj.NumeroCaja;
         }
 
         private void btnSeleccionarFactura_Click(object sender, EventArgs e)
@@ -69,6 +71,7 @@ namespace IntegraJeff
             FrmFactura frfact = new FrmFactura(fact);
             frfact.ShowDialog();
             txtIdRemisiones.Text = fact.IdRemisionesFactura.ToString();
+            txtNumeroFactura.Text = fact.Numero;
         }
 
         private void btnSeleccionarIntermediario_Click(object sender, EventArgs e)
@@ -77,6 +80,7 @@ namespace IntegraJeff
             FrmIntermediario frint = new FrmIntermediario(inter);
             frint.ShowDialog();
             txtIdIntermediarios.Text = inter.IDIntermediario.ToString();
+            txtNombreIntermediario.Text = inter.Nombre;
         }
 
         private void btnSeleccionarUnidades_Click(object sender, EventArgs e)
@@ -85,6 +89,7 @@ namespace IntegraJeff
             FrmUnidades frUni = new FrmUnidades(uni);
             frUni.ShowDialog();
             txtIdUnidades.Text = uni.IdUnidad.ToString();
+            txtNumeroUnidad.Text = uni.Numero;
         }
 
         private void btnSeleccionarConductores_Click(object sender, EventArgs e)
@@ -93,6 +98,7 @@ namespace IntegraJeff
             FrmConductor frCond = new FrmConductor(cond);
             frCond.ShowDialog();
             txtIdConductores.Text = cond.IDConductor.ToString();
+            txtNombreConductor.Text = cond.Nombre;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
