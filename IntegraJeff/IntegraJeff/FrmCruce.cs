@@ -64,6 +64,10 @@ namespace IntegraJeff
                 {
                     cantidad++;
                 }
+                else if (_intTotalRegistros == 0)
+                {
+                    cantidad++;
+                }
                 txtCantidadPaginas.Text = cantidad.ToString();
                 txtRegistrosTotales.Text = _intTotalRegistros.ToString();
                 cboPagina.Items.Clear();
@@ -134,6 +138,11 @@ namespace IntegraJeff
                 {
                     cantidad++;
                 }
+
+              else if (_intTotalRegistros == 0)
+                {
+                    cantidad++;
+                }
                 txtCantidadPaginas.Text = cantidad.ToString();
                 txtRegistrosTotales.Text = _intTotalRegistros.ToString();
                 cboPagina.Items.Clear();
@@ -176,8 +185,10 @@ namespace IntegraJeff
             int intFila = e.RowIndex;
             try
             {
+                string strcliente="",strcaja="",strFact="",strInter="",strUnid="",strCond="";
                 int intId = int.Parse(dtgCruce.Rows[intFila].Cells[0].Value.ToString());
-                string strQuery = $"select * from cruces where idCruces = {intId};";
+                bool blnEstFact = false;
+                string strQuery = $"select * from vistacruce where `ID-Cruces` = {intId};";
                 MySqlCommand mscCommand = new MySqlCommand(strQuery, conn);
 
                 conn.Open();
@@ -186,44 +197,58 @@ namespace IntegraJeff
                 {
                     if (msdrLector.Read())
                     {
-                        CruceActual.IdCruces = msdrLector.GetInt32("idCruces");
-                        CruceActual.TipoServicio = msdrLector.GetString("TipoServicio");
-                        CruceActual.IdClientes = msdrLector.GetInt32("idClientes");
-                        CruceActual.IdCajas = msdrLector.GetInt32("idCajas");
-                        CruceActual.IdRemisionesYFacturas = msdrLector.GetInt32("idRemisionesYFacturas");
-                        CruceActual.EstatusCobro = msdrLector.GetBoolean("EstatusCobro");
-                        CruceActual.FechaCarga = msdrLector.GetDateTime("FechaCarga");
-                        CruceActual.FechaEntrega = msdrLector.GetDateTime("FechaEntrega");
-                        CruceActual.LugarCarga = msdrLector.GetString("LugarCarga");
-                        CruceActual.LugarDescarga = msdrLector.GetString("LugarDescarga");
-                        CruceActual.PrecioPesos = msdrLector.GetDouble("PrecioPesos");
-                        CruceActual.PrecioDolares = msdrLector.GetDouble("PrecioDolares");
-                        CruceActual.IdIntermediarios = msdrLector.GetInt32("idIntermediarios");
-                        CruceActual.Asignada = msdrLector.GetBoolean("Asignada");
+                        CruceActual.IdCruces = msdrLector.GetInt32("ID-Cruces");
+                        CruceActual.TipoServicio = msdrLector.GetString("Tipo de Servicio");
+                        CruceActual.IdClientes = msdrLector.GetInt32("ID-Clientes");
+                        strcliente = msdrLector.GetString("Cliente");
+                        CruceActual.IdCajas = msdrLector.GetInt32("ID-Cajas");
+                        strcaja = msdrLector.GetString("Numero de Caja");
+                        CruceActual.IdRemisionesYFacturas = msdrLector.GetInt32("ID-Remisiones y Facturas");
+                        strFact = msdrLector.GetString("Numero Fact/Remi");
+                        CruceActual.EstatusCobro = msdrLector.GetString("Estado de Cobro - Cruce") == "PAGADO";
+                        blnEstFact = msdrLector.GetString("Estatus de Cobro - Factura") == "PAGADO";
+                        CruceActual.FechaCarga = msdrLector.GetDateTime("Fecha de Carga");
+                        CruceActual.FechaEntrega = msdrLector.GetDateTime("Fecha de Entrega");
+                        CruceActual.LugarCarga = msdrLector.GetString("Lugar de Carga");
+                        CruceActual.LugarDescarga = msdrLector.GetString("Lugar de Descarga");
+                        CruceActual.PrecioPesos = msdrLector.GetDouble("Precio Pesos");
+                        CruceActual.PrecioDolares = msdrLector.GetDouble("Precio Dolares");
+                        CruceActual.IdIntermediarios = msdrLector.GetInt32("ID-intermediarios");
+                        strInter = msdrLector.GetString("Intermediario");
+                        CruceActual.Asignada = msdrLector.GetString("Asignada") == "Si";
                         CruceActual.Demora = msdrLector.GetString("Demora");
-                        CruceActual.HorasDemora = msdrLector.GetInt32("HorasDemora");
-                        CruceActual.Unidades = msdrLector.GetInt32("idUnidades");
-                        CruceActual.Conductores = msdrLector.GetInt32("idConductores");
+                        CruceActual.HorasDemora = msdrLector.GetInt32("Horas de Demora");
+                        CruceActual.Unidades = msdrLector.GetInt32("ID-Unidades");
+                        strUnid = msdrLector.GetString("Unidad");
+                        CruceActual.Conductores = msdrLector.GetInt32("ID-Conductor");
+                        strCond = msdrLector.GetString("Conductor");
                         CruceActual.Anotaciones = msdrLector.GetString("Anotaciones");
                         CruceActual.Referencia = msdrLector.GetString("Referencia");
                     }
                 }
                 chkAsignada.Checked = CruceActual.Asignada;
                 chkEstatusCobro.Checked = CruceActual.EstatusCobro;
+                chkEstFact.Checked = blnEstFact;
                 txtIdCruces.Text = CruceActual.IdCruces.ToString();
                 txtTipoServicio.Text = CruceActual.TipoServicio;
                 txtIdClientes.Text = CruceActual.IdClientes.ToString();
+                txtClientes.Text = strcliente;
                 txtIdCajas.Text = CruceActual.IdCajas.ToString();
+                txtCajas.Text = strcaja;
                 txtIdRemisiones.Text = CruceActual.IdRemisionesYFacturas.ToString();
+                txtFacturas.Text = strFact;
                 txtLugarCarga.Text = CruceActual.LugarCarga;
                 txtLugarDescarga.Text = CruceActual.LugarDescarga;
                 txtPrecioPesos.Text = CruceActual.PrecioPesos.ToString();
                 txtPrecioDolares.Text = CruceActual.PrecioDolares.ToString();
                 txtIdIntermediarios.Text = CruceActual.IdIntermediarios.ToString();
+                txtIntermediarios.Text = strInter;
                 txtDemora.Text = CruceActual.Demora;
                 txtHorasDemora.Text = CruceActual.HorasDemora.ToString();
                 txtIdUnidades.Text = CruceActual.Unidades.ToString();
+                txtUnidades.Text = strUnid;
                 txtIdConductores.Text = CruceActual.Conductores.ToString();
+                txtConductores.Text = strCond;
                 txtAnotaciones.Text = CruceActual.Anotaciones;
                 txtReferencia.Text = CruceActual.Referencia;
                 dtpFechaCarga.Value = CruceActual.FechaCarga;
@@ -361,13 +386,13 @@ namespace IntegraJeff
             foreach (DataGridViewRow row in dtgCruce.Rows)
             {
 
-                string fctPag = Convert.ToString(row.Cells[8].Value);
-                string cruPag = Convert.ToString(row.Cells[9].Value);
+                string fctPag = Convert.ToString(row.Cells["Estatus de Cobro - Factura"].Value);
+                string cruPag = Convert.ToString(row.Cells["Estado de Cobro - Cruce"].Value);
 
                 if (fctPag.Equals("PAGADO") || cruPag.Equals("PAGADO"))
                 {
-                    row.DefaultCellStyle.BackColor = Color.FromArgb(131, 144, 250);
-                    row.DefaultCellStyle.ForeColor = Color.FromArgb(249, 233, 236);
+                    row.DefaultCellStyle.BackColor = Color.CornflowerBlue;
+                    row.DefaultCellStyle.ForeColor = Color.Black;
                 }
                 else
                 {

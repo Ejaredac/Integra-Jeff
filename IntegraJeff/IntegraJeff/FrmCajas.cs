@@ -98,6 +98,10 @@ namespace IntegraJeff
                 {
                     cantidad++;
                 }
+                else if (_intTotalRegistros == 0)
+                {
+                    cantidad++;
+                }
                 txtCantidadPaginas.Text = cantidad.ToString();
                 txtRegistrosTotales.Text = _intTotalRegistros.ToString();
                 cboPagina.Items.Clear();
@@ -138,6 +142,10 @@ namespace IntegraJeff
                 int _intTotalRegistros = int.Parse(dt.Tables[0].Rows[0][0].ToString());
                 int cantidad = _intTotalRegistros / intCantidadDeRegistros;
                 if (_intTotalRegistros % intCantidadDeRegistros > 0)
+                {
+                    cantidad++;
+                }
+                else if (_intTotalRegistros == 0)
                 {
                     cantidad++;
                 }

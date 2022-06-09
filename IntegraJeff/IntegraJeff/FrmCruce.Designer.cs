@@ -29,9 +29,9 @@ namespace IntegraJeff
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pnlCruceSeleccionado = new System.Windows.Forms.Panel();
             this.txtReferencia = new System.Windows.Forms.TextBox();
             this.txtAnotaciones = new System.Windows.Forms.TextBox();
@@ -86,6 +86,13 @@ namespace IntegraJeff
             this.lblDe = new System.Windows.Forms.Label();
             this.cboPagina = new System.Windows.Forms.ComboBox();
             this.txtRegistrosTotales = new System.Windows.Forms.TextBox();
+            this.txtClientes = new System.Windows.Forms.TextBox();
+            this.txtCajas = new System.Windows.Forms.TextBox();
+            this.txtFacturas = new System.Windows.Forms.TextBox();
+            this.txtIntermediarios = new System.Windows.Forms.TextBox();
+            this.txtUnidades = new System.Windows.Forms.TextBox();
+            this.txtConductores = new System.Windows.Forms.TextBox();
+            this.chkEstFact = new System.Windows.Forms.CheckBox();
             this.pnlCruceSeleccionado.SuspendLayout();
             this.pnlEspacioTabla.SuspendLayout();
             this.pnlTablaDatos.SuspendLayout();
@@ -96,6 +103,13 @@ namespace IntegraJeff
             // pnlCruceSeleccionado
             // 
             this.pnlCruceSeleccionado.AutoScroll = true;
+            this.pnlCruceSeleccionado.Controls.Add(this.chkEstFact);
+            this.pnlCruceSeleccionado.Controls.Add(this.txtConductores);
+            this.pnlCruceSeleccionado.Controls.Add(this.txtUnidades);
+            this.pnlCruceSeleccionado.Controls.Add(this.txtIntermediarios);
+            this.pnlCruceSeleccionado.Controls.Add(this.txtFacturas);
+            this.pnlCruceSeleccionado.Controls.Add(this.txtCajas);
+            this.pnlCruceSeleccionado.Controls.Add(this.txtClientes);
             this.pnlCruceSeleccionado.Controls.Add(this.txtReferencia);
             this.pnlCruceSeleccionado.Controls.Add(this.txtAnotaciones);
             this.pnlCruceSeleccionado.Controls.Add(this.txtIdConductores);
@@ -137,68 +151,68 @@ namespace IntegraJeff
             this.pnlCruceSeleccionado.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCruceSeleccionado.Location = new System.Drawing.Point(0, 0);
             this.pnlCruceSeleccionado.Name = "pnlCruceSeleccionado";
-            this.pnlCruceSeleccionado.Size = new System.Drawing.Size(1146, 197);
+            this.pnlCruceSeleccionado.Size = new System.Drawing.Size(1218, 209);
             this.pnlCruceSeleccionado.TabIndex = 0;
             // 
             // txtReferencia
             // 
-            this.txtReferencia.Location = new System.Drawing.Point(991, 151);
+            this.txtReferencia.Location = new System.Drawing.Point(1037, 151);
             this.txtReferencia.Name = "txtReferencia";
-            this.txtReferencia.Size = new System.Drawing.Size(133, 20);
+            this.txtReferencia.Size = new System.Drawing.Size(144, 20);
             this.txtReferencia.TabIndex = 1;
             // 
             // txtAnotaciones
             // 
-            this.txtAnotaciones.Location = new System.Drawing.Point(991, 120);
+            this.txtAnotaciones.Location = new System.Drawing.Point(1037, 120);
             this.txtAnotaciones.Name = "txtAnotaciones";
-            this.txtAnotaciones.Size = new System.Drawing.Size(133, 20);
+            this.txtAnotaciones.Size = new System.Drawing.Size(144, 20);
             this.txtAnotaciones.TabIndex = 1;
             // 
             // txtIdConductores
             // 
-            this.txtIdConductores.Location = new System.Drawing.Point(991, 83);
+            this.txtIdConductores.Location = new System.Drawing.Point(1023, 83);
             this.txtIdConductores.Name = "txtIdConductores";
-            this.txtIdConductores.Size = new System.Drawing.Size(133, 20);
+            this.txtIdConductores.Size = new System.Drawing.Size(41, 20);
             this.txtIdConductores.TabIndex = 1;
             // 
             // txtIdUnidades
             // 
-            this.txtIdUnidades.Location = new System.Drawing.Point(991, 52);
+            this.txtIdUnidades.Location = new System.Drawing.Point(1023, 52);
             this.txtIdUnidades.Name = "txtIdUnidades";
-            this.txtIdUnidades.Size = new System.Drawing.Size(133, 20);
+            this.txtIdUnidades.Size = new System.Drawing.Size(41, 20);
             this.txtIdUnidades.TabIndex = 1;
             // 
             // txtHorasDemora
             // 
-            this.txtHorasDemora.Location = new System.Drawing.Point(991, 18);
+            this.txtHorasDemora.Location = new System.Drawing.Point(1048, 17);
             this.txtHorasDemora.Name = "txtHorasDemora";
             this.txtHorasDemora.Size = new System.Drawing.Size(133, 20);
             this.txtHorasDemora.TabIndex = 1;
             // 
             // txtDemora
             // 
-            this.txtDemora.Location = new System.Drawing.Point(719, 154);
+            this.txtDemora.Location = new System.Drawing.Point(757, 168);
             this.txtDemora.Name = "txtDemora";
             this.txtDemora.Size = new System.Drawing.Size(153, 20);
             this.txtDemora.TabIndex = 1;
             // 
             // txtIdIntermediarios
             // 
-            this.txtIdIntermediarios.Location = new System.Drawing.Point(719, 86);
+            this.txtIdIntermediarios.Location = new System.Drawing.Point(757, 86);
             this.txtIdIntermediarios.Name = "txtIdIntermediarios";
-            this.txtIdIntermediarios.Size = new System.Drawing.Size(153, 20);
+            this.txtIdIntermediarios.Size = new System.Drawing.Size(43, 20);
             this.txtIdIntermediarios.TabIndex = 1;
             // 
             // txtPrecioDolares
             // 
-            this.txtPrecioDolares.Location = new System.Drawing.Point(719, 52);
+            this.txtPrecioDolares.Location = new System.Drawing.Point(757, 52);
             this.txtPrecioDolares.Name = "txtPrecioDolares";
             this.txtPrecioDolares.Size = new System.Drawing.Size(153, 20);
             this.txtPrecioDolares.TabIndex = 1;
             // 
             // txtPrecioPesos
             // 
-            this.txtPrecioPesos.Location = new System.Drawing.Point(719, 18);
+            this.txtPrecioPesos.Location = new System.Drawing.Point(757, 18);
             this.txtPrecioPesos.Name = "txtPrecioPesos";
             this.txtPrecioPesos.Size = new System.Drawing.Size(153, 20);
             this.txtPrecioPesos.TabIndex = 1;
@@ -233,23 +247,23 @@ namespace IntegraJeff
             // 
             // txtIdRemisiones
             // 
-            this.txtIdRemisiones.Location = new System.Drawing.Point(138, 154);
+            this.txtIdRemisiones.Location = new System.Drawing.Point(72, 168);
             this.txtIdRemisiones.Name = "txtIdRemisiones";
-            this.txtIdRemisiones.Size = new System.Drawing.Size(153, 20);
+            this.txtIdRemisiones.Size = new System.Drawing.Size(60, 20);
             this.txtIdRemisiones.TabIndex = 1;
             // 
             // txtIdCajas
             // 
-            this.txtIdCajas.Location = new System.Drawing.Point(138, 120);
+            this.txtIdCajas.Location = new System.Drawing.Point(72, 119);
             this.txtIdCajas.Name = "txtIdCajas";
-            this.txtIdCajas.Size = new System.Drawing.Size(153, 20);
+            this.txtIdCajas.Size = new System.Drawing.Size(60, 20);
             this.txtIdCajas.TabIndex = 1;
             // 
             // txtIdClientes
             // 
-            this.txtIdClientes.Location = new System.Drawing.Point(138, 86);
+            this.txtIdClientes.Location = new System.Drawing.Point(72, 86);
             this.txtIdClientes.Name = "txtIdClientes";
-            this.txtIdClientes.Size = new System.Drawing.Size(153, 20);
+            this.txtIdClientes.Size = new System.Drawing.Size(60, 20);
             this.txtIdClientes.TabIndex = 1;
             // 
             // txtTipoServicio
@@ -269,7 +283,7 @@ namespace IntegraJeff
             // lblReferencia
             // 
             this.lblReferencia.AutoSize = true;
-            this.lblReferencia.Location = new System.Drawing.Point(926, 154);
+            this.lblReferencia.Location = new System.Drawing.Point(971, 154);
             this.lblReferencia.Name = "lblReferencia";
             this.lblReferencia.Size = new System.Drawing.Size(59, 13);
             this.lblReferencia.TabIndex = 1;
@@ -278,7 +292,7 @@ namespace IntegraJeff
             // lblAnotaciones
             // 
             this.lblAnotaciones.AutoSize = true;
-            this.lblAnotaciones.Location = new System.Drawing.Point(919, 123);
+            this.lblAnotaciones.Location = new System.Drawing.Point(964, 123);
             this.lblAnotaciones.Name = "lblAnotaciones";
             this.lblAnotaciones.Size = new System.Drawing.Size(66, 13);
             this.lblAnotaciones.TabIndex = 1;
@@ -287,7 +301,7 @@ namespace IntegraJeff
             // lblIdConductores
             // 
             this.lblIdConductores.AutoSize = true;
-            this.lblIdConductores.Location = new System.Drawing.Point(906, 86);
+            this.lblIdConductores.Location = new System.Drawing.Point(928, 89);
             this.lblIdConductores.Name = "lblIdConductores";
             this.lblIdConductores.Size = new System.Drawing.Size(79, 13);
             this.lblIdConductores.TabIndex = 1;
@@ -296,7 +310,7 @@ namespace IntegraJeff
             // lblIdUnidades
             // 
             this.lblIdUnidades.AutoSize = true;
-            this.lblIdUnidades.Location = new System.Drawing.Point(921, 52);
+            this.lblIdUnidades.Location = new System.Drawing.Point(943, 55);
             this.lblIdUnidades.Name = "lblIdUnidades";
             this.lblIdUnidades.Size = new System.Drawing.Size(64, 13);
             this.lblIdUnidades.TabIndex = 1;
@@ -305,7 +319,7 @@ namespace IntegraJeff
             // lblHorasDemora
             // 
             this.lblHorasDemora.AutoSize = true;
-            this.lblHorasDemora.Location = new System.Drawing.Point(895, 18);
+            this.lblHorasDemora.Location = new System.Drawing.Point(940, 18);
             this.lblHorasDemora.Name = "lblHorasDemora";
             this.lblHorasDemora.Size = new System.Drawing.Size(90, 13);
             this.lblHorasDemora.TabIndex = 8;
@@ -314,7 +328,7 @@ namespace IntegraJeff
             // lblDemora
             // 
             this.lblDemora.AutoSize = true;
-            this.lblDemora.Location = new System.Drawing.Point(669, 157);
+            this.lblDemora.Location = new System.Drawing.Point(691, 171);
             this.lblDemora.Name = "lblDemora";
             this.lblDemora.Size = new System.Drawing.Size(44, 13);
             this.lblDemora.TabIndex = 1;
@@ -325,15 +339,15 @@ namespace IntegraJeff
             this.chkEstatusCobro.AutoSize = true;
             this.chkEstatusCobro.Location = new System.Drawing.Point(304, 20);
             this.chkEstatusCobro.Name = "chkEstatusCobro";
-            this.chkEstatusCobro.Size = new System.Drawing.Size(107, 17);
+            this.chkEstatusCobro.Size = new System.Drawing.Size(144, 17);
             this.chkEstatusCobro.TabIndex = 1;
-            this.chkEstatusCobro.Text = "Estatus de Cobro";
+            this.chkEstatusCobro.Text = "Estatus de Cobro - Cruce";
             this.chkEstatusCobro.UseVisualStyleBackColor = true;
             // 
             // chkAsignada
             // 
             this.chkAsignada.AutoSize = true;
-            this.chkAsignada.Location = new System.Drawing.Point(643, 122);
+            this.chkAsignada.Location = new System.Drawing.Point(665, 147);
             this.chkAsignada.Name = "chkAsignada";
             this.chkAsignada.Size = new System.Drawing.Size(70, 17);
             this.chkAsignada.TabIndex = 1;
@@ -343,7 +357,7 @@ namespace IntegraJeff
             // lblIdIntermediarios
             // 
             this.lblIdIntermediarios.AutoSize = true;
-            this.lblIdIntermediarios.Location = new System.Drawing.Point(629, 89);
+            this.lblIdIntermediarios.Location = new System.Drawing.Point(651, 89);
             this.lblIdIntermediarios.Name = "lblIdIntermediarios";
             this.lblIdIntermediarios.Size = new System.Drawing.Size(84, 13);
             this.lblIdIntermediarios.TabIndex = 1;
@@ -352,7 +366,7 @@ namespace IntegraJeff
             // lblPrecioDolares
             // 
             this.lblPrecioDolares.AutoSize = true;
-            this.lblPrecioDolares.Location = new System.Drawing.Point(631, 55);
+            this.lblPrecioDolares.Location = new System.Drawing.Point(653, 55);
             this.lblPrecioDolares.Name = "lblPrecioDolares";
             this.lblPrecioDolares.Size = new System.Drawing.Size(82, 13);
             this.lblPrecioDolares.TabIndex = 1;
@@ -361,7 +375,7 @@ namespace IntegraJeff
             // lblPrecioPesos
             // 
             this.lblPrecioPesos.AutoSize = true;
-            this.lblPrecioPesos.Location = new System.Drawing.Point(638, 21);
+            this.lblPrecioPesos.Location = new System.Drawing.Point(660, 21);
             this.lblPrecioPesos.Name = "lblPrecioPesos";
             this.lblPrecioPesos.Size = new System.Drawing.Size(75, 13);
             this.lblPrecioPesos.TabIndex = 1;
@@ -406,16 +420,18 @@ namespace IntegraJeff
             // lblIdRemisionesyFacturas
             // 
             this.lblIdRemisionesyFacturas.AutoSize = true;
-            this.lblIdRemisionesyFacturas.Location = new System.Drawing.Point(13, 157);
+            this.lblIdRemisionesyFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIdRemisionesyFacturas.Location = new System.Drawing.Point(7, 151);
             this.lblIdRemisionesyFacturas.Name = "lblIdRemisionesyFacturas";
-            this.lblIdRemisionesyFacturas.Size = new System.Drawing.Size(119, 13);
+            this.lblIdRemisionesyFacturas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.lblIdRemisionesyFacturas.Size = new System.Drawing.Size(125, 13);
             this.lblIdRemisionesyFacturas.TabIndex = 4;
-            this.lblIdRemisionesyFacturas.Text = "Id RemisionesyFacturas";
+            this.lblIdRemisionesyFacturas.Text = "Id Remisiones y Facturas";
             // 
             // lblIdCajas
             // 
             this.lblIdCajas.AutoSize = true;
-            this.lblIdCajas.Location = new System.Drawing.Point(87, 123);
+            this.lblIdCajas.Location = new System.Drawing.Point(21, 122);
             this.lblIdCajas.Name = "lblIdCajas";
             this.lblIdCajas.Size = new System.Drawing.Size(45, 13);
             this.lblIdCajas.TabIndex = 3;
@@ -424,7 +440,7 @@ namespace IntegraJeff
             // lblIdClientes
             // 
             this.lblIdClientes.AutoSize = true;
-            this.lblIdClientes.Location = new System.Drawing.Point(76, 89);
+            this.lblIdClientes.Location = new System.Drawing.Point(10, 89);
             this.lblIdClientes.Name = "lblIdClientes";
             this.lblIdClientes.Size = new System.Drawing.Size(56, 13);
             this.lblIdClientes.TabIndex = 2;
@@ -453,9 +469,9 @@ namespace IntegraJeff
             this.pnlEspacioTabla.Controls.Add(this.pnlTablaDatos);
             this.pnlEspacioTabla.Controls.Add(this.pnlControlesTabla);
             this.pnlEspacioTabla.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlEspacioTabla.Location = new System.Drawing.Point(0, 197);
+            this.pnlEspacioTabla.Location = new System.Drawing.Point(0, 209);
             this.pnlEspacioTabla.Name = "pnlEspacioTabla";
-            this.pnlEspacioTabla.Size = new System.Drawing.Size(1146, 461);
+            this.pnlEspacioTabla.Size = new System.Drawing.Size(1218, 449);
             this.pnlEspacioTabla.TabIndex = 8;
             // 
             // pnlTablaDatos
@@ -464,7 +480,7 @@ namespace IntegraJeff
             this.pnlTablaDatos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlTablaDatos.Location = new System.Drawing.Point(0, 0);
             this.pnlTablaDatos.Name = "pnlTablaDatos";
-            this.pnlTablaDatos.Size = new System.Drawing.Size(870, 461);
+            this.pnlTablaDatos.Size = new System.Drawing.Size(942, 449);
             this.pnlTablaDatos.TabIndex = 1;
             // 
             // dtgCruce
@@ -477,24 +493,24 @@ namespace IntegraJeff
             this.dtgCruce.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtgCruce.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtgCruce.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(108)))), ((int)(((byte)(117)))), ((int)(((byte)(125)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgCruce.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 9F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgCruce.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dtgCruce.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgCruce.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtgCruce.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(165)))), ((int)(((byte)(165)))), ((int)(((byte)(165)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtgCruce.DefaultCellStyle = dataGridViewCellStyle5;
             this.dtgCruce.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dtgCruce.EnableHeadersVisualStyles = false;
             this.dtgCruce.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(136)))), ((int)(((byte)(197)))));
@@ -502,17 +518,17 @@ namespace IntegraJeff
             this.dtgCruce.Name = "dtgCruce";
             this.dtgCruce.ReadOnly = true;
             this.dtgCruce.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(39)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtgCruce.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(53)))), ((int)(((byte)(53)))), ((int)(((byte)(53)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Roboto", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(31)))), ((int)(((byte)(39)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtgCruce.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dtgCruce.RowHeadersVisible = false;
             this.dtgCruce.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgCruce.Size = new System.Drawing.Size(870, 461);
+            this.dtgCruce.Size = new System.Drawing.Size(942, 449);
             this.dtgCruce.TabIndex = 1;
             this.dtgCruce.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgCruce_CellClick);
             this.dtgCruce.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgCruce_CellFormatting);
@@ -531,15 +547,15 @@ namespace IntegraJeff
             this.pnlControlesTabla.Controls.Add(this.cboPagina);
             this.pnlControlesTabla.Controls.Add(this.txtRegistrosTotales);
             this.pnlControlesTabla.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlControlesTabla.Location = new System.Drawing.Point(870, 0);
+            this.pnlControlesTabla.Location = new System.Drawing.Point(942, 0);
             this.pnlControlesTabla.Name = "pnlControlesTabla";
-            this.pnlControlesTabla.Size = new System.Drawing.Size(276, 461);
+            this.pnlControlesTabla.Size = new System.Drawing.Size(276, 449);
             this.pnlControlesTabla.TabIndex = 0;
             // 
             // btnEliminar
             // 
             this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.Location = new System.Drawing.Point(189, 426);
+            this.btnEliminar.Location = new System.Drawing.Point(189, 414);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 6;
@@ -561,7 +577,7 @@ namespace IntegraJeff
             // btnEditar
             // 
             this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnEditar.Location = new System.Drawing.Point(122, 343);
+            this.btnEditar.Location = new System.Drawing.Point(122, 331);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 23);
             this.btnEditar.TabIndex = 5;
@@ -583,7 +599,7 @@ namespace IntegraJeff
             // btnAgregar
             // 
             this.btnAgregar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnAgregar.Location = new System.Drawing.Point(14, 343);
+            this.btnAgregar.Location = new System.Drawing.Point(14, 331);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(81, 25);
             this.btnAgregar.TabIndex = 4;
@@ -650,11 +666,64 @@ namespace IntegraJeff
             this.txtRegistrosTotales.Size = new System.Drawing.Size(100, 20);
             this.txtRegistrosTotales.TabIndex = 0;
             // 
+            // txtClientes
+            // 
+            this.txtClientes.Location = new System.Drawing.Point(138, 86);
+            this.txtClientes.Name = "txtClientes";
+            this.txtClientes.Size = new System.Drawing.Size(153, 20);
+            this.txtClientes.TabIndex = 9;
+            // 
+            // txtCajas
+            // 
+            this.txtCajas.Location = new System.Drawing.Point(138, 119);
+            this.txtCajas.Name = "txtCajas";
+            this.txtCajas.Size = new System.Drawing.Size(153, 20);
+            this.txtCajas.TabIndex = 10;
+            // 
+            // txtFacturas
+            // 
+            this.txtFacturas.Location = new System.Drawing.Point(138, 168);
+            this.txtFacturas.Name = "txtFacturas";
+            this.txtFacturas.Size = new System.Drawing.Size(153, 20);
+            this.txtFacturas.TabIndex = 11;
+            // 
+            // txtIntermediarios
+            // 
+            this.txtIntermediarios.Location = new System.Drawing.Point(806, 86);
+            this.txtIntermediarios.Name = "txtIntermediarios";
+            this.txtIntermediarios.Size = new System.Drawing.Size(104, 20);
+            this.txtIntermediarios.TabIndex = 12;
+            // 
+            // txtUnidades
+            // 
+            this.txtUnidades.Location = new System.Drawing.Point(1073, 51);
+            this.txtUnidades.Name = "txtUnidades";
+            this.txtUnidades.Size = new System.Drawing.Size(108, 20);
+            this.txtUnidades.TabIndex = 13;
+            // 
+            // txtConductores
+            // 
+            this.txtConductores.Location = new System.Drawing.Point(1073, 83);
+            this.txtConductores.Name = "txtConductores";
+            this.txtConductores.Size = new System.Drawing.Size(108, 20);
+            this.txtConductores.TabIndex = 14;
+            // 
+            // chkEstFact
+            // 
+            this.chkEstFact.AutoSize = true;
+            this.chkEstFact.Location = new System.Drawing.Point(473, 17);
+            this.chkEstFact.Name = "chkEstFact";
+            this.chkEstFact.Size = new System.Drawing.Size(152, 17);
+            this.chkEstFact.TabIndex = 15;
+            this.chkEstFact.Text = "Estatus de Cobro - Factura";
+            this.chkEstFact.UseVisualStyleBackColor = true;
+            // 
             // FrmCruce
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1146, 658);
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(1218, 658);
             this.Controls.Add(this.pnlEspacioTabla);
             this.Controls.Add(this.pnlCruceSeleccionado);
             this.Name = "FrmCruce";
@@ -727,5 +796,12 @@ namespace IntegraJeff
         private System.Windows.Forms.Label lblDe;
         private System.Windows.Forms.ComboBox cboPagina;
         private System.Windows.Forms.TextBox txtRegistrosTotales;
+        private System.Windows.Forms.TextBox txtConductores;
+        private System.Windows.Forms.TextBox txtUnidades;
+        private System.Windows.Forms.TextBox txtIntermediarios;
+        private System.Windows.Forms.TextBox txtFacturas;
+        private System.Windows.Forms.TextBox txtCajas;
+        private System.Windows.Forms.TextBox txtClientes;
+        private System.Windows.Forms.CheckBox chkEstFact;
     }
 }

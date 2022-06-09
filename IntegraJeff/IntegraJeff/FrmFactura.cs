@@ -250,7 +250,12 @@ namespace IntegraJeff
                 datostablas.Fill(dt);
                 int _intTotalRegistros = int.Parse(dt.Tables[0].Rows[0][0].ToString());
                 int cantidad = _intTotalRegistros / intCantidadDeRegistros;
+                
                 if (_intTotalRegistros % intCantidadDeRegistros > 0)
+                {
+                    cantidad++;
+                }
+                else if (_intTotalRegistros == 0)
                 {
                     cantidad++;
                 }
@@ -310,6 +315,10 @@ namespace IntegraJeff
                 {
                     cantidad++;
                 }
+                else if (_intTotalRegistros == 0)
+                {
+                    cantidad++;
+                }
                 txtCantidadPaginas.Text = cantidad.ToString();
                 txtRegistrosTotales.Text = _intTotalRegistros.ToString();
                 cboPagina.Items.Clear();
@@ -337,13 +346,13 @@ namespace IntegraJeff
             foreach (DataGridViewRow row in dtgFactura.Rows)
             {
 
-                string fctPag = Convert.ToString(row.Cells[12].Value);
+                string fctPag = Convert.ToString(row.Cells["Estatus Cobro"].Value);
                 
 
                 if (fctPag.Equals("PAGADO"))
                 {
-                    row.DefaultCellStyle.BackColor = Color.FromArgb(131, 144, 250);
-                    row.DefaultCellStyle.ForeColor = Color.FromArgb(249, 233, 236);
+                    row.DefaultCellStyle.BackColor = Color.CornflowerBlue;
+                    row.DefaultCellStyle.ForeColor = Color.Black;
                 }
                 else
                 {

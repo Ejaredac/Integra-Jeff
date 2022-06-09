@@ -65,7 +65,7 @@ namespace IntegraJeff
             this.pnlPanelNavegacion.Location = new System.Drawing.Point(0, 0);
             this.pnlPanelNavegacion.Margin = new System.Windows.Forms.Padding(10);
             this.pnlPanelNavegacion.Name = "pnlPanelNavegacion";
-            this.pnlPanelNavegacion.Size = new System.Drawing.Size(199, 761);
+            this.pnlPanelNavegacion.Size = new System.Drawing.Size(152, 761);
             this.pnlPanelNavegacion.TabIndex = 0;
             // 
             // materialButton3
@@ -81,7 +81,7 @@ namespace IntegraJeff
             this.materialButton3.Location = new System.Drawing.Point(0, 448);
             this.materialButton3.Name = "materialButton3";
             this.materialButton3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton3.Size = new System.Drawing.Size(199, 46);
+            this.materialButton3.Size = new System.Drawing.Size(152, 46);
             this.materialButton3.TabIndex = 9;
             this.materialButton3.Text = "Intermediarios";
             this.materialButton3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -100,7 +100,7 @@ namespace IntegraJeff
             this.materialButton4.Location = new System.Drawing.Point(0, 402);
             this.materialButton4.Name = "materialButton4";
             this.materialButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton4.Size = new System.Drawing.Size(199, 46);
+            this.materialButton4.Size = new System.Drawing.Size(152, 46);
             this.materialButton4.TabIndex = 8;
             this.materialButton4.Text = "Unidades";
             this.materialButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -119,7 +119,7 @@ namespace IntegraJeff
             this.materialButton2.Location = new System.Drawing.Point(0, 356);
             this.materialButton2.Name = "materialButton2";
             this.materialButton2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton2.Size = new System.Drawing.Size(199, 46);
+            this.materialButton2.Size = new System.Drawing.Size(152, 46);
             this.materialButton2.TabIndex = 6;
             this.materialButton2.Text = "Mantenimientos";
             this.materialButton2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -138,7 +138,7 @@ namespace IntegraJeff
             this.materialButton1.Location = new System.Drawing.Point(0, 310);
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton1.Size = new System.Drawing.Size(199, 46);
+            this.materialButton1.Size = new System.Drawing.Size(152, 46);
             this.materialButton1.TabIndex = 5;
             this.materialButton1.Text = "Conductores";
             this.materialButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -157,7 +157,7 @@ namespace IntegraJeff
             this.btnClientes.Location = new System.Drawing.Point(0, 264);
             this.btnClientes.Name = "btnClientes";
             this.btnClientes.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnClientes.Size = new System.Drawing.Size(199, 46);
+            this.btnClientes.Size = new System.Drawing.Size(152, 46);
             this.btnClientes.TabIndex = 4;
             this.btnClientes.Text = "Clientes";
             this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -176,7 +176,7 @@ namespace IntegraJeff
             this.btnCajas.Location = new System.Drawing.Point(0, 218);
             this.btnCajas.Name = "btnCajas";
             this.btnCajas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCajas.Size = new System.Drawing.Size(199, 46);
+            this.btnCajas.Size = new System.Drawing.Size(152, 46);
             this.btnCajas.TabIndex = 3;
             this.btnCajas.Text = "Cajas";
             this.btnCajas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -195,7 +195,7 @@ namespace IntegraJeff
             this.btnFacturas.Location = new System.Drawing.Point(0, 172);
             this.btnFacturas.Name = "btnFacturas";
             this.btnFacturas.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnFacturas.Size = new System.Drawing.Size(199, 46);
+            this.btnFacturas.Size = new System.Drawing.Size(152, 46);
             this.btnFacturas.TabIndex = 2;
             this.btnFacturas.Text = "Facturas";
             this.btnFacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -214,7 +214,7 @@ namespace IntegraJeff
             this.btnCruces.Location = new System.Drawing.Point(0, 126);
             this.btnCruces.Name = "btnCruces";
             this.btnCruces.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btnCruces.Size = new System.Drawing.Size(199, 46);
+            this.btnCruces.Size = new System.Drawing.Size(152, 46);
             this.btnCruces.TabIndex = 1;
             this.btnCruces.Text = "Cruces";
             this.btnCruces.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -229,7 +229,7 @@ namespace IntegraJeff
             this.pnlUsuarioEspacio.Location = new System.Drawing.Point(0, 0);
             this.pnlUsuarioEspacio.Margin = new System.Windows.Forms.Padding(0);
             this.pnlUsuarioEspacio.Name = "pnlUsuarioEspacio";
-            this.pnlUsuarioEspacio.Size = new System.Drawing.Size(199, 126);
+            this.pnlUsuarioEspacio.Size = new System.Drawing.Size(152, 126);
             this.pnlUsuarioEspacio.TabIndex = 0;
             // 
             // pctUsuario
@@ -247,7 +247,7 @@ namespace IntegraJeff
             this.pctUsuario.Location = new System.Drawing.Point(0, 0);
             this.pctUsuario.Margin = new System.Windows.Forms.Padding(0);
             this.pctUsuario.Name = "pctUsuario";
-            this.pctUsuario.Size = new System.Drawing.Size(199, 126);
+            this.pctUsuario.Size = new System.Drawing.Size(152, 126);
             this.pctUsuario.TabIndex = 0;
             this.pctUsuario.Text = "Usuario";
             this.pctUsuario.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
@@ -259,15 +259,16 @@ namespace IntegraJeff
             this.pnlDatos.BackColor = System.Drawing.Color.White;
             this.pnlDatos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pnlDatos.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDatos.Location = new System.Drawing.Point(199, 0);
+            this.pnlDatos.Location = new System.Drawing.Point(152, 0);
             this.pnlDatos.Margin = new System.Windows.Forms.Padding(5);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(1135, 761);
+            this.pnlDatos.Size = new System.Drawing.Size(1182, 761);
             this.pnlDatos.TabIndex = 1;
             // 
             // Pantalla_Principal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1334, 761);
             this.Controls.Add(this.pnlDatos);
