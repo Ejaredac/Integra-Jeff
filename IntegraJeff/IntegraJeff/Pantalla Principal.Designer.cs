@@ -42,6 +42,7 @@ namespace IntegraJeff
             this.pnlUsuarioEspacio = new System.Windows.Forms.Panel();
             this.pctUsuario = new FontAwesome.Sharp.IconButton();
             this.pnlDatos = new System.Windows.Forms.Panel();
+            this.btnGasolinas = new FontAwesome.Sharp.Material.MaterialButton();
             this.pnlPanelNavegacion.SuspendLayout();
             this.pnlUsuarioEspacio.SuspendLayout();
             this.SuspendLayout();
@@ -52,6 +53,7 @@ namespace IntegraJeff
             this.pnlPanelNavegacion.AutoScrollMargin = new System.Drawing.Size(5, 5);
             this.pnlPanelNavegacion.AutoScrollMinSize = new System.Drawing.Size(5, 5);
             this.pnlPanelNavegacion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(58)))), ((int)(((byte)(64)))));
+            this.pnlPanelNavegacion.Controls.Add(this.btnGasolinas);
             this.pnlPanelNavegacion.Controls.Add(this.materialButton3);
             this.pnlPanelNavegacion.Controls.Add(this.materialButton4);
             this.pnlPanelNavegacion.Controls.Add(this.materialButton2);
@@ -262,15 +264,35 @@ namespace IntegraJeff
             this.pnlDatos.Location = new System.Drawing.Point(152, 0);
             this.pnlDatos.Margin = new System.Windows.Forms.Padding(5);
             this.pnlDatos.Name = "pnlDatos";
-            this.pnlDatos.Size = new System.Drawing.Size(1182, 761);
+            this.pnlDatos.Size = new System.Drawing.Size(1192, 761);
             this.pnlDatos.TabIndex = 1;
+            // 
+            // btnGasolinas
+            // 
+            this.btnGasolinas.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.btnGasolinas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnGasolinas.FlatAppearance.BorderSize = 0;
+            this.btnGasolinas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGasolinas.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGasolinas.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnGasolinas.IconChar = FontAwesome.Sharp.MaterialIcons.GasStation;
+            this.btnGasolinas.IconColor = System.Drawing.Color.White;
+            this.btnGasolinas.Location = new System.Drawing.Point(0, 494);
+            this.btnGasolinas.Name = "btnGasolinas";
+            this.btnGasolinas.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btnGasolinas.Size = new System.Drawing.Size(152, 46);
+            this.btnGasolinas.TabIndex = 10;
+            this.btnGasolinas.Text = "Gasolinas";
+            this.btnGasolinas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGasolinas.UseVisualStyleBackColor = true;
+            this.btnGasolinas.Click += new System.EventHandler(this.btnGasolinas_Click);
             // 
             // Pantalla_Principal
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Black;
-            this.ClientSize = new System.Drawing.Size(1334, 761);
+            this.ClientSize = new System.Drawing.Size(1344, 761);
             this.Controls.Add(this.pnlDatos);
             this.Controls.Add(this.pnlPanelNavegacion);
             this.Font = new System.Drawing.Font("Roboto", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -302,5 +324,6 @@ namespace IntegraJeff
         private FontAwesome.Sharp.Material.MaterialButton btnCajas;
         private FontAwesome.Sharp.Material.MaterialButton btnFacturas;
         private FontAwesome.Sharp.IconButton pctUsuario;
+        private FontAwesome.Sharp.Material.MaterialButton btnGasolinas;
     }
 }

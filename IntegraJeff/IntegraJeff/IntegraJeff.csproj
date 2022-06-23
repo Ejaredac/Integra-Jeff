@@ -234,6 +234,30 @@
     <Compile Include="FrmFacturaEditar.Designer.cs">
       <DependentUpon>FrmFacturaEditar.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmGasolinas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGasolinas.Designer.cs">
+      <DependentUpon>FrmGasolinas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGasolinasAgregar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGasolinasAgregar.Designer.cs">
+      <DependentUpon>FrmGasolinasAgregar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGasolinasBuscar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGasolinasBuscar.Designer.cs">
+      <DependentUpon>FrmGasolinasBuscar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGasolinasEditar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGasolinasEditar.Designer.cs">
+      <DependentUpon>FrmGasolinasEditar.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmIntermediario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -318,6 +342,7 @@
     <Compile Include="FrnUsuarioEmpleado.Designer.cs">
       <DependentUpon>FrnUsuarioEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Gasolina.cs" />
     <Compile Include="Intermediarios.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -403,6 +428,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFacturaEditar.resx">
       <DependentUpon>FrmFacturaEditar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGasolinas.resx">
+      <DependentUpon>FrmGasolinas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGasolinasAgregar.resx">
+      <DependentUpon>FrmGasolinasAgregar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGasolinasBuscar.resx">
+      <DependentUpon>FrmGasolinasBuscar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGasolinasEditar.resx">
+      <DependentUpon>FrmGasolinasEditar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmIntermediario.resx">
       <DependentUpon>FrmIntermediario.cs</DependentUpon>

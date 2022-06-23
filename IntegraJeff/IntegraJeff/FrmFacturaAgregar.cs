@@ -53,15 +53,15 @@ VALUES
                 MySqlCommand mscCommand = new MySqlCommand(strOrder, conn);
                 mscCommand.Parameters.AddWithValue("@nomb", txtNombreCliente.Text);
                 mscCommand.Parameters.AddWithValue("@num", txtNumeroFactura.Text);
-                mscCommand.Parameters.AddWithValue("@ffact", dtpFechaFactura.Value);
+                mscCommand.Parameters.AddWithValue("@ffact", dtpFechaFactura.Value.Date);
                 mscCommand.Parameters.AddWithValue("@dol", double.Parse(txtDolares.Text));
                 mscCommand.Parameters.AddWithValue("@tpc", double.Parse(txtTipoCambio.Text));
                 mscCommand.Parameters.AddWithValue("@stp", double.Parse(txtSubtotalPesos.Text));
                 mscCommand.Parameters.AddWithValue("@iva", double.Parse(txtIva.Text));
                 mscCommand.Parameters.AddWithValue("@ret", double.Parse(txtRetencion.Text));
                 mscCommand.Parameters.AddWithValue("@totp", double.Parse(txtTotalPesos.Text));
-                mscCommand.Parameters.AddWithValue("@fpag", dtpFechaPago.Value);
-                mscCommand.Parameters.AddWithValue("@fven", dtpFechaVencimiento.Value);
+                mscCommand.Parameters.AddWithValue("@fpag", dtpFechaPago.Value.Date);
+                mscCommand.Parameters.AddWithValue("@fven", dtpFechaVencimiento.Value.Date);
                 mscCommand.Parameters.AddWithValue("@est", chkEstatusCobro.Checked);
                 conn.Open();
                 mscCommand.ExecuteNonQuery();

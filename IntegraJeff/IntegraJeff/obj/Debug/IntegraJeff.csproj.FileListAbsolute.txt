@@ -71,3 +71,7 @@ C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\Central Jeff.pdb
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.csproj.AssemblyReference.cache
 C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.csproj.SuggestedBindingRedirects.cache
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmGasolinas.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmGasolinasBuscar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmGasolinasAgregar.resources
+C:\Users\ejare\Documents\_DevOps\SoftDevs\Integra Jeff\Integra-Jeff\IntegraJeff\IntegraJeff\obj\Debug\IntegraJeff.FrmGasolinasEditar.resources

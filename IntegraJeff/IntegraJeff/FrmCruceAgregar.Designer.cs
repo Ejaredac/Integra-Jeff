@@ -180,6 +180,8 @@ namespace IntegraJeff
             // 
             // dtpFechaEntrega
             // 
+            this.dtpFechaEntrega.CustomFormat = "dd  MMMM  yyy";
+            this.dtpFechaEntrega.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaEntrega.Location = new System.Drawing.Point(441, 97);
             this.dtpFechaEntrega.Name = "dtpFechaEntrega";
             this.dtpFechaEntrega.Size = new System.Drawing.Size(200, 20);
@@ -187,6 +189,8 @@ namespace IntegraJeff
             // 
             // dtpFechaCarga
             // 
+            this.dtpFechaCarga.CustomFormat = "dd  MMMM  yyy";
+            this.dtpFechaCarga.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFechaCarga.Location = new System.Drawing.Point(441, 63);
             this.dtpFechaCarga.Name = "dtpFechaCarga";
             this.dtpFechaCarga.Size = new System.Drawing.Size(200, 20);

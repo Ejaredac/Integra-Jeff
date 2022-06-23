@@ -82,8 +82,8 @@ VALUES
                 mscCommand.Parameters.AddWithValue("@cos",double.Parse(txtCosto.Text));
                 mscCommand.Parameters.AddWithValue("@mec",txtMecanico.Text);
                 mscCommand.Parameters.AddWithValue("@desc", txtDescripcion.Text);
-                mscCommand.Parameters.AddWithValue("@frep",dtpFechaReparacion.Value);
-                mscCommand.Parameters.AddWithValue("@fpag",dtpFechaPago.Value);
+                mscCommand.Parameters.AddWithValue("@frep",dtpFechaReparacion.Value.Date);
+                mscCommand.Parameters.AddWithValue("@fpag",dtpFechaPago.Value.Date);
                 conn.Open();
                 mscCommand.ExecuteNonQuery();
             }

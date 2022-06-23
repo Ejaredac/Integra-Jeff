@@ -154,8 +154,8 @@ VALUES
                 mscCommand.Parameters.AddWithValue("@idcaj", int.Parse(txtIdCajas.Text));
                 mscCommand.Parameters.AddWithValue("@idremi", int.Parse(txtIdRemisiones.Text));
                 mscCommand.Parameters.AddWithValue("@est", chkEstatusCobro.Checked);
-                mscCommand.Parameters.AddWithValue("@fcar", dtpFechaCarga.Value);
-                mscCommand.Parameters.AddWithValue("@fent", dtpFechaEntrega.Value);
+                mscCommand.Parameters.AddWithValue("@fcar", dtpFechaCarga.Value.Date);
+                mscCommand.Parameters.AddWithValue("@fent", dtpFechaEntrega.Value.Date);
                 mscCommand.Parameters.AddWithValue("@lugcar", txtLugarCarga.Text);
                 mscCommand.Parameters.AddWithValue("@lugdes", txtLugarDescarga.Text);
                 mscCommand.Parameters.AddWithValue("@prepes", double.Parse(txtPrecioPesos.Text));

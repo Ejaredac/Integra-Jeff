@@ -258,6 +258,7 @@ namespace IntegraJeff
                 else if (_intTotalRegistros == 0)
                 {
                     cantidad++;
+                    varPagIndice = 0;
                 }
                 txtCantidadPaginas.Text = cantidad.ToString();
                 txtRegistrosTotales.Text = _intTotalRegistros.ToString();
@@ -318,6 +319,7 @@ namespace IntegraJeff
                 else if (_intTotalRegistros == 0)
                 {
                     cantidad++;
+                    varPagIndice = 0;
                 }
                 txtCantidadPaginas.Text = cantidad.ToString();
                 txtRegistrosTotales.Text = _intTotalRegistros.ToString();

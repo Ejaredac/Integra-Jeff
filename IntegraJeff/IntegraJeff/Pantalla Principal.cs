@@ -127,5 +127,10 @@ namespace IntegraJeff
         {
             openChildForm(new FrmFactura());
         }
+
+        private void btnGasolinas_Click(object sender, EventArgs e)
+        {
+            openChildForm(new FrmGasolinas());
+        }
     }
 }
